@@ -16,7 +16,7 @@ header {
 
 #title {
     flex-direction: column;
-    line-height: 10px;
+    line-height: 40px;
 }
 
 li {
@@ -45,7 +45,9 @@ a:hover {
 }
 
 h1 {
-    font-weight: 200;
+    font-weight: bold;
+    font-size: 40px;
+    text-transform: uppercase;
 }
 
 main {
@@ -56,8 +58,9 @@ main {
 
 h2 {
     font-size: 56px;
-    line-height: 10px;
+    line-height: 48px;
     font-family: 'poppinsmedium';
+    font-weight: bold;
 }
 
 span {
@@ -68,6 +71,7 @@ p {
     line-height: 20px;
     max-width: 500px;
     font-family: 'poppinslight';
+    text-align: justify;
 }
 
 img {
@@ -83,6 +87,7 @@ form {
 form [type="submit"] {
     height: 50px;
     width: 50%;
+    line-height: 0;
     background-color: #840ec9;
     color: white;
     font-weight: bold;
@@ -94,7 +99,7 @@ form [type="submit"]:hover {
 
 input {
     margin-top: 20px;
-    height: 20px;
+    height: 60px;
     padding: 20px;
     border-radius: 20px;
     border: none;
