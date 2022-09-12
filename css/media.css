@@ -1,46 +1,43 @@
 @media screen and (max-width: 760px) {
-    header {
-        flex-direction: column;
+
+    .logo h1 {
+        font-size: 30px;
     }
 
-    main {
-        flex-direction: column;
+    .navbar-toggler {
+        background-color: #00a7aa;
+    }
+
+    nav ul {
+        width: 180px;
+        margin: 0 auto ;
     }
 
     aside {
         width: 100%;
     }
 
-    .logo h1 {
-        font-size: 30px;
-    }
-
-    h2 {
+    aside h2 {
         font-size: 40px;
         text-align: center;
+        line-height: 42px;
+    }
+
+    .login-btn {
+        flex-direction: column;
+    }
+
+    .login-btn input {
+        width: 100%;
+        padding: 5px 0 5px 0;
+        font-size: 20px;
     }
     
-    form {
-        margin: 0 auto;
-        width: 100%;
-    }
-
-    input[type="submit"] {
-        width: 90%;
-        margin: 10 auto;
-        font-size: 20px;
-    }
-
-    input[type="button"] {
-        margin: 20px auto;
-        font-size: 20px;
+    .login-btn a {
+        margin: 30px auto 0 auto;
     }
 
     img {
         display: none;
-    }
-
-    ul {
-        text-align: center;
     }
 }

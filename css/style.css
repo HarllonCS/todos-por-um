@@ -1,4 +1,5 @@
 body {
+    background-color: whitesmoke;
     font-family: 'poppinsregular';
     max-width: 1200px;
     margin: 0 auto;
@@ -8,7 +9,7 @@ body {
 .logo h1 {
     color: black;
     font-weight: bold;
-    font-size: 40px;
+    font-size: 45px;
     text-transform: uppercase;
 }
 
@@ -17,8 +18,7 @@ body {
 }
 
 .nav-item {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 60px;
     cursor: pointer;
     font-weight: bold;
 }
@@ -26,6 +26,11 @@ body {
 .nav-link {
     color: black;
     transition: .3s;
+}
+
+.active {
+    color: #00a7aa;
+    cursor: auto;
 }
 
 .nav-link:hover {
@@ -39,29 +44,32 @@ main {
     margin-top: 50px;
 }
 
-h2 {
+aside {
+    padding: 20px;
+    width: 40%;
+    box-shadow: 0px 10px 15px 8px rgba(0, 0, 0, 0.274);
+    border-radius: 10px;
+}
+
+aside h2 {
     font-size: 56px;
-    line-height: 48px;
+    line-height: 55px;
     font-family: 'poppinsmedium';
     font-weight: bold;
 }
 
-span {
+aside span {
     color: #00a7aa;
 }
 
-p {
+aside p {
     line-height: 20px;
     max-width: 500px;
     font-family: 'poppinslight';
     text-align: justify;
 }
 
-aside {
-    width: 40%;
-}
-
-img {
+article img {
     width: 520px;
 }
 
@@ -80,6 +88,7 @@ form [type="email"], [type="password"] {
 
 .login-btn {
     margin-top: 40px;
+    font-size: 16px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -92,12 +101,14 @@ form [type="submit"] {
     background-color: #00a7aa;
     font-weight: bold;
     border: none;
-    border-radius: 20px;
+    border-radius: 30px;
+    transition: .3s;
 }
 
 form [type="submit"]:hover {
     cursor: pointer;
     color: white;
+    background-color: #00c0c4;
 }
 
 .login-btn a {
