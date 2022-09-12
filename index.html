@@ -15,22 +15,23 @@
 
 <body>
     <header>
-        <div id="title">
+        <div class="logo">
             <h1>Todos<br>Por Um</h1>
         </div>
 
-        <ul>
-            <a href="index.html"><li>Início</li></a>
-            <a href="#"><li>Serviços</li></a>
-            <a href="#"><li>Sobre</li></a>
-            <a href="#"><li>Contato</li></a>
-            <a href="#" id="inscreva-se-btn"><li>Cadastrar-se</li></a>
-        </ul>
+        <nav>
+            <ul>
+                <li href="index.html"><a>Início</a></li>
+                <li href="#"><a>Serviços</a></li>
+                <li href="#"><a>Sobre</a></li>
+                <li href="#"><a>Contato</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main role="main">
         <aside>
-            <h2><span>Inscreva-se agora</span></h2>
+            <h2><span>Comece agora</span></h2>
 
             <h2>Junte-se a nós</h2>
 
@@ -41,10 +42,14 @@
             <form action="">
                 <input type="email" placeholder="E-mail" required>
 
-                <input type="password" placeholder="Senha" required minlength="8">
+                <input type="password" placeholder="Senha" required>
 
-                <input type="submit" value="ENTRAR">
+                <input type="submit" class="btn" value="ENTRAR">
+                <a>
+                    <input type="button" class="btn" value="Candastrar">
+                </a>
             </form>
+            
         </aside>
 
         <article>
