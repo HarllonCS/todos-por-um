@@ -1,16 +1,24 @@
+/* ESTILIZAÇÃO DO MENÚ RESPONSIVO */
+
 @media screen and (max-width: 760px) {
+
+    /* Título "Todos Por Um" */
 
     .logo h1 {
         font-size: 30px;
     }
 
+    /* Botão "hambúrguer" do menu responsivo */
+
     .navbar-toggler {
         background-color: #00a7aa;
     }
 
+    /* Opções do menú: "Início", "Serviços", etc... */
+
     nav ul {
         width: 180px;
-        margin: 0 auto ;
+        margin: 0 auto;
     }
 
     aside {
@@ -23,9 +31,13 @@
         line-height: 42px;
     }
 
+    /* Botões */
+
     .login-btn {
         flex-direction: column;
     }
+
+    /* Botão de "ENTRAR" */
 
     .login-btn input {
         width: 100%;
@@ -33,9 +45,13 @@
         font-size: 20px;
     }
     
+    /* Link para Cadastrar */
+
     .login-btn a {
         margin: 30px auto 0 auto;
     }
+
+    /* Imagem animada não aparece no responsivo*/
 
     img {
         display: none;
