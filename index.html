@@ -15,17 +15,36 @@
 
 <body>
     <header>
-        <div class="logo">
-            <h1>Todos<br>Por Um</h1>
-        </div>
+        <nav class="navbar navbar-expand-sm">
+            <div class="logo">
+                <a href="index.html">
+                    <h1>Todos<br>Por Um</h1>
+                </a>
+            </div>
+        
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navegacao">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <nav>
-            <ul>
-                <li href="index.html"><a>Início</a></li>
-                <li href="#"><a>Serviços</a></li>
-                <li href="#"><a>Sobre</a></li>
-                <li href="#"><a>Contato</a></li>
-            </ul>
+            <div id="navegacao" class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                    <li href="index.html" class="nav-item">
+                        <a class="nav-link active">Início</a>
+                    </li>
+
+                    <li href="#" class="nav-item">
+                        <a class="nav-link">Serviços</a>
+                    </li>
+
+                    <li href="#" class="nav-item">
+                        <a class="nav-link">Sobre</a>
+                    </li>
+
+                    <li href="#" class="nav-item">
+                        <a class="nav-link">Contato</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
 
@@ -40,16 +59,17 @@
             </p>
             
             <form action="">
-                <input type="email" placeholder="E-mail" required>
+                <div class="login-inputs">
+                    <input type="email" placeholder="E-mail" required>
 
-                <input type="password" placeholder="Senha" required>
+                    <input type="password" placeholder="Senha" required>
+                </div>
 
-                <input type="submit" class="btn" value="ENTRAR">
-                <a>
-                    <input type="button" class="btn" value="Candastrar">
-                </a>
+                <div class="login-btn">
+                    <input type="submit" class="btn" value="ENTRAR">
+                    <a href="#">Cadastrar</a>
+                </div>
             </form>
-            
         </aside>
 
         <article>

@@ -1,42 +1,41 @@
 body {
-    background-color: white;
     font-family: 'poppinsregular';
     max-width: 1200px;
     margin: 0 auto;
     padding: 15px;
 }
 
-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo {
-    line-height: 40px;
-}
-
-li {
-    display: inline-block;
-    margin: 20px;
-    cursor: pointer;
-}
-
-li:hover {
-    color: #840ec9;
-    transition: .3s all;
-}
-
-h1 {
+.logo h1 {
+    color: black;
     font-weight: bold;
     font-size: 40px;
     text-transform: uppercase;
 }
 
+.logo a:hover {
+    text-decoration: none;
+}
+
+.nav-item {
+    margin-left: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.nav-link {
+    color: black;
+    transition: .3s;
+}
+
+.nav-link:hover {
+    color: #00a7aa;
+}
+
 main {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     margin-top: 50px;
 }
 
@@ -48,7 +47,7 @@ h2 {
 }
 
 span {
-    color: #840ec9;
+    color: #00a7aa;
 }
 
 p {
@@ -58,48 +57,57 @@ p {
     text-align: justify;
 }
 
+aside {
+    width: 40%;
+}
+
 img {
-    width: 580px;
+    width: 520px;
+}
+
+.login-inputs {
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
 }
 
 form [type="email"], [type="password"] {
-    display: flex;
-    flex-direction: column;
-    width: 90%;
     margin-top: 20px;
     padding: 20px;
     border-radius: 20px;
-    border: none;
-    font-size: 15px;
-    border: 2px solid #cecece;
+    border: 2px solid #e6e6e6;
+}
+
+.login-btn {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 form [type="submit"] {
     height: 50px;
     width: 30%;
     color: white;
-    background-color: #840ec9;
+    background-color: #00a7aa;
     font-weight: bold;
     border: none;
-    margin-top: 40px;
     border-radius: 20px;
 }
 
 form [type="submit"]:hover {
     cursor: pointer;
     color: white;
-    box-shadow: 1px 1px 12px 5px #9210dd;
 }
 
-input[type="button"] {
-    color: #840ec9;
+.login-btn a {
+    color: #00a7aa;
+    margin-top: 10px;
     font-weight: bold;
-    margin-left: 180px;
-    margin-top: 40px;
 }
 
-input[type="button"]:hover {
+.login-btn a:hover {
     text-decoration: underline;
-    color: #840ec9;
+    color: #008183;
     text-decoration-thickness: 1.5px;
 }
