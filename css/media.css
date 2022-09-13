@@ -2,6 +2,10 @@
 
 @media screen and (max-width: 760px) {
 
+    body {
+        width: 100%;
+    }
+
     /* Título "Todos Por Um" */
 
     .logo h1 {
@@ -17,7 +21,7 @@
     /* Opções do menú: "Início", "Serviços", etc... */
 
     nav ul {
-        width: 180px;
+        width: 50%;
         margin: 0 auto;
     }
 
