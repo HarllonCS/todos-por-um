@@ -9,7 +9,7 @@
     /* Título "Todos Por Um" */
 
     .logo h1 {
-        font-size: 30px;
+        font-size: 8vw;
     }
 
     /* Botão "hambúrguer" do menu responsivo */
@@ -22,7 +22,15 @@
 
     nav ul {
         width: 50%;
-        margin: 0 auto;
+        margin: 5vw auto 0px auto;
+    }
+
+    nav li {
+        margin-bottom: 5vw;
+    }
+
+    nav a {
+        font-size: 3.5vw;
     }
 
     aside {
@@ -30,9 +38,23 @@
     }
 
     aside h2 {
-        font-size: 40px;
+        font-size: 10vw;
         text-align: center;
-        line-height: 42px;
+        line-height: 9vw;
+    }
+
+    aside p {
+        line-height: 4.2vw;
+    }
+
+    .login-inputs {
+        font-size: 4vw;
+        margin-top: 2vw;
+    }
+
+    input[type="email"], [type="password"] {
+        padding: 3vw;
+        margin-top: 4vw;
     }
 
     /* Botões */
@@ -44,15 +66,16 @@
     /* Botão de "ENTRAR" */
 
     .login-btn input {
-        width: 100%;
-        padding: 5px 0 5px 0;
-        font-size: 20px;
+        padding: 1.5vw 1vw;
+        font-size: 5vw;
+        margin-top: 4vw;
     }
     
     /* Link para Cadastrar */
 
     .login-btn a {
-        margin: 30px auto 0 auto;
+        margin: 6vw auto 0 auto;
+        font-size: 4vw;
     }
 
     /* Imagem animada não aparece no responsivo*/
