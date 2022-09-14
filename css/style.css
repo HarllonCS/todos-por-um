@@ -11,9 +11,7 @@ body {
 
 .logo h1 {
     color: black;
-    font-weight: bold;
     font-size: 3vw;
-    text-transform: uppercase;
 }
 
 .logo a:hover {
@@ -26,7 +24,6 @@ body {
 .nav-item {
     margin-left: 3.5vw;
     cursor: pointer;
-    font-weight: bold;
     font-size: 1vw;
 }
 
@@ -47,8 +44,6 @@ body {
 /* Formatação da tela de login */
 
 main {
-    display: flex;
-    flex-direction: row;
     justify-content: space-between;
     margin-top: 2vw;
 }
@@ -66,7 +61,6 @@ aside h2 {
     font-size: 3.2vw;
     line-height: 3.3vw;
     font-family: 'poppinsmedium';
-    font-weight: bold;
 }
 
 aside span {
@@ -76,22 +70,20 @@ aside span {
 aside p {
     line-height: 1.3vw;
     font-family: 'poppinslight';
-    text-align: justify;
 }
 
 /* Formatação dos campos (inputs) */
 
 .login-inputs {
-    display: flex;
     flex-direction: column;
-    font-size: 1vw;
+    font-size: .9vw;
 }
 
 form [type="email"], [type="password"] {
     margin-top: 1.2vw;
-    padding: 1.2vw;
+    padding: 1vw;
     border-radius: 20px;
-    border: 2px solid #e6e6e6;
+    border: 1px solid #e6e6e6;
 }
 
 /* Botões */
@@ -99,16 +91,13 @@ form [type="email"], [type="password"] {
 .login-btn {
     margin-top: 2.5vw;
     font-size: .9vw;
-    display: flex;
-    flex-direction: row;
     justify-content: space-between;
 }
 
 .login-btn input {
-    padding: 1vw 2.1vw;
+    padding: .8vw 2vw;
     color: white;
     background-color: #00a7aa;
-    font-weight: bold;
     border: none;
     border-radius: 30px;
     transition: .3s;
@@ -123,7 +112,6 @@ form [type="email"], [type="password"] {
 .login-btn a {
     color: #00a7aa;
     margin-top: .8vw;
-    font-weight: bold;
 }
 
 .login-btn a:hover {
