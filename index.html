@@ -16,117 +16,147 @@
 </head>
 
 <body>
-    <header><!-- início Cabeçalho -->
-        
-        <nav class="navbar navbar-expand-lg"><!-- Menu -->
+    <div class="cont m-auto">
+        <header><!-- início Cabeçalho -->
+            
+            <nav class="navbar navbar-expand-lg"><!-- Menu -->
 
-            <div class="logo"><!-- Logotipo "Todos Por Um" -->
-                <a href="index.html">
-                    <h1 class="font-weight-bold text-uppercase">Todos<br>Por Um</h1>
-                </a>
-            </div><!-- /fim Logotipo "Todos Por Um" -->
-        
-            <!-- Menu responsivo -->
+                <div class="logo"><!-- Logotipo "Todos Por Um" -->
+                    <a href="index.html">
+                        <h1 class="font-weight-bold text-uppercase">Todos<br>Por Um</h1>
+                    </a>
+                </div><!-- /fim Logotipo "Todos Por Um" -->
+            
+                <!-- Menu responsivo -->
 
-            <div id="navegacao" class="collapse navbar-collapse">
-                <ul class="navbar-nav ml-auto">
-                    <li href="index.html" class="nav-item font-weight-bold">
-                        <a class="nav-link active">Início</a>
-                    </li>
+                <div id="navegacao" class="collapse navbar-collapse">
+                    <ul class="navbar-nav ml-auto">
+                        <li href="index.html" class="nav-item font-weight-bold">
+                            <a class="nav-link active">Início</a>
+                        </li>
 
-                    <li href="#" class="nav-item font-weight-bold">
-                        <a class="nav-link">Serviços</a>
-                    </li>
+                        <li href="#" class="nav-item font-weight-bold">
+                            <a class="nav-link">Serviços</a>
+                        </li>
 
-                    <li href="#" class="nav-item font-weight-bold">
-                        <a class="nav-link">Sobre</a>
-                    </li>
+                        <li href="#" class="nav-item font-weight-bold">
+                            <a class="nav-link">Sobre</a>
+                        </li>
 
-                    <li href="#" class="nav-item font-weight-bold">
-                        <a class="nav-link">Contato</a>
-                    </li>
-                </ul>
+                        <li href="#" class="nav-item font-weight-bold">
+                            <a class="nav-link">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Botão "hambúrguer" do menu responsivo -->
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#navegacao">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- /fim Botão "hambúrguer" do menu responsivo -->
+                
+                <!-- /fim Menu responsivo -->
+
+            </nav> <!-- /fim Menu -->
+
+        </header> <!-- /fim Cabeçalho -->
+
+        <main role="main" class="d-flex"> <!-- Tela de login -->
+            <aside data-aos="zoom-in" data-aos-duration="850"> <!-- Texto e formulário -->
+
+                <!-- Texto da tela de login -->
+
+                <h2 class="font-weight-bold">
+                    <span>Comece agora!</span><br>Junte-se a nós.
+                </h2>
+
+                <p class="text-justify">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos nostrum neque impedit nesciunt eaque culpa tempore, autem asperiores consectetur voluptatibus non, sunt vel qui incidunt omnis deserunt voluptate, eos dolor.
+                </p>
+
+                <!-- /fim Texto da tela de login -->
+                
+                <form action=""><!-- Formulário da tela de login -->
+                    <div class="login-inputs d-flex">
+                        <input type="email" placeholder="E-mail" required autofocus>
+
+                        <input type="password" placeholder="Senha" required>
+                    </div>
+
+                    <div class="login-btn d-flex">
+                        <input type="submit" class="btn font-weight-bold" value="ENTRAR">
+
+                        <a href="cadastro.html" class="font-weight-bold" type="button" data-toggle="modal" data-target="#formModal">Cadastrar</a>
+                    </div>
+                </form> <!-- /fim Formulário da tela de login -->
+            </aside> <!-- /fim Texto e formulário -->
+
+            <!--  -->
+            <div class="modal fade" id="formModal" tabindex="-1" aria-labelledby="labelEstatico" aria-hidden="true">
+                <div class="modal-dialog modal-md modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-content">
+
+                        <!-- Cabeçalho do Modal -->
+                        <div class="modal-header">
+
+                            <!-- Título do Modal -->
+                            <h5 class="modal-title text-uppercase font-weight-bold ml-auto" id="labelEstatico">Cadastro</h5>
+                            <!-- /fim Título do Modal -->
+                            
+                            <!-- Botão de fechar no canto superior -->
+                            <button type="button" class="close" data-dismiss="modal" aria-label="close">
+                                <span aria-hidden="true" class="badge badge-danger">&times;</span>
+                            </button>
+                            <!-- /fim Botão de fechar no canto superior -->
+                        </div>
+                        <!-- /fim Cabeçalho do Modal -->
+                        
+                        <!-- Corpo do do Modal -->
+                        <div class="modal-body">
+
+                            <!-- Formulário de cadastro -->
+                            <form action="">
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label for="idNome">Nome:</label>
+
+                                        <input type="text" class="form-control" name="usrNome" id="idNome">
+                                    </div>
+
+                                    <div class="form-group col-md-6">
+                                        <label for="idSobrenome">Sobrenome:</label>
+
+                                        <input type="text" class="form-control" name="usrSobrenome" id="idSobrenome">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+
+                                </div>
+                            </form>
+                            <!-- /fim Formulário de cadastro -->
+                        </div>
+                        <!-- /fim Corpo do Modal -->
+                        
+                        <!-- Rodapé do Modal -->
+                        <div class="modal-footer">
+                            
+                            <!-- Botão de Enviar -->
+                            <button type="button" class="btn btn-success text-uppercase">
+                                Enviar
+                            </button>
+                            <!-- /fim Botão de Enviar -->
+                        </div>
+                        <!-- /fim Rodapé do Modal -->
+                    </div>
+                </div>
             </div>
 
-            <!-- Botão "hambúrguer" do menu responsivo -->
-            <button class="navbar-toggler" data-toggle="collapse" data-target="#navegacao">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <!-- /fim Botão "hambúrguer" do menu responsivo -->
-            
-            <!-- /fim Menu responsivo -->
-
-        </nav> <!-- /fim Menu -->
-
-    </header> <!-- /fim Cabeçalho -->
-
-    <main role="main" class="d-flex"> <!-- Tela de login -->
-        <aside data-aos="zoom-in" data-aos-duration="850"> <!-- Texto e formulário -->
-
-            <!-- Texto da tela de login -->
-
-            <h2 class="font-weight-bold">
-                <span>Comece agora!</span><br>Junte-se a nós.
-            </h2>
-
-            <p class="text-justify">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos nostrum neque impedit nesciunt eaque culpa tempore, autem asperiores consectetur voluptatibus non, sunt vel qui incidunt omnis deserunt voluptate, eos dolor.
-            </p>
-
-            <!-- /fim Texto da tela de login -->
-            
-            <form action=""><!-- Formulário da tela de login -->
-                <div class="login-inputs d-flex">
-                    <input type="email" placeholder="E-mail" required autofocus>
-
-                    <input type="password" placeholder="Senha" required>
-                </div>
-
-                <div class="login-btn d-flex">
-                    <input type="submit" class="btn font-weight-bold" value="ENTRAR">
-
-                    <a href="cadastro.html" class="font-weight-bold" type="button" data-toggle="modal" data-target="#formModal">Cadastrar</a>
-                </div>
-            </form> <!-- /fim formulário da tela de login -->
-        </aside> <!-- /fim Texto e formulário -->
-
-        <article> <!-- Imagem de crianças pulando -->
-            <img src="imgs/login-gif.svg" alt="Crianças pulando alegremente">
-        </article> <!-- /fim Imagem de crianças pulando -->
-
-        <div class="modal fade" id="formModal" tabindex="-1" aria-labelledby="labelEstatico" aria-hidden="true">
-            <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="labelEstatico">Cadastro</h5>
-    
-                        <button type="button" class="close" data-dismiss="modal" aria-label="close">
-                            <span aria-hidden="true" class="badge badge-danger">&times;</span>
-                        </button>
-                    </div>
-    
-                    <div class="modal-body">
-                        <form action="">
-                            <div class="d-flex">
-                                <input type="text" placeholder="Nome">
-                                <input type="text" placeholder="Sobrenome">
-                            </div>
-                        </form>
-                    </div>
-    
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-danger" data-dismiss="modal">
-                            Fechar
-                        </button>
-    
-                        <button type="button" class="btn btn-success">
-                            Enviar
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main> <!-- /fim Tela de login -->
+            <article> <!-- Imagem de crianças pulando -->
+                <img src="imgs/login-gif.svg" alt="Crianças pulando alegremente">
+            </article> <!-- /fim Imagem de crianças pulando -->
+        </main> <!-- /fim Tela de login -->
+    </div>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 

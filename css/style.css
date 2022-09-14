@@ -1,8 +1,10 @@
 body {
     background-color: whitesmoke;
     font-family: 'poppinsregular';
+}
+
+.cont {
     width: 70vw;
-    margin: 0 auto;
     padding: 1vw;
 }
 
@@ -123,5 +125,5 @@ form [type="email"], [type="password"] {
 /* Imagem animada */
 
 article img {
-    width: 30vw;
+    width: 28vw;
 }
