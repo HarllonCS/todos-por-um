@@ -80,4 +80,13 @@
     img {
         display: none;
     }
+
+    .modal-content {
+        width: 90vw;
+        box-shadow: none;
+    }
+
+    .def-fisica, .def-intel {
+        font-size: 3.5vw;
+    }
 }

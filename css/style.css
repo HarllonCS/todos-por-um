@@ -26,7 +26,7 @@ body {
 .nav-item {
     margin-left: 3.5vw;
     cursor: pointer;
-    font-size: .8vw;
+    font-size: .9vw;
 }
 
 .nav-link {
@@ -65,7 +65,7 @@ aside h2 {
     font-family: 'poppinsmedium';
 }
 
-aside span {
+aside span, .logo span {
     color: #00a7aa;
 }
 
@@ -127,4 +127,25 @@ aside [type="email"], aside [type="password"] {
 
 article img {
     width: 28vw;
+}
+
+
+/* Modal */
+
+.titulo-modal {
+    background-color: #00a7aa;
+    font-size: .9vw;
+}
+
+.modal-content {
+    width: 30vw;
+    box-shadow: 1px 1px 20px 12px rgba(0, 0, 0, 0.274);
+}
+
+.tamanho-input-modal {
+    width: 20vw;
+}
+
+.modal-footer button {
+    
 }
