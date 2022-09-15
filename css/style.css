@@ -26,7 +26,7 @@ body {
 .nav-item {
     margin-left: 3.5vw;
     cursor: pointer;
-    font-size: 1vw;
+    font-size: .8vw;
 }
 
 .nav-link {
@@ -72,6 +72,7 @@ aside span {
 aside p {
     line-height: 1.3vw;
     font-family: 'poppinslight';
+    font-size: .9vw;
 }
 
 /* Formatação dos campos (inputs) */
@@ -81,7 +82,7 @@ aside p {
     font-size: .9vw;
 }
 
-form [type="email"], [type="password"] {
+aside [type="email"], aside [type="password"] {
     margin-top: 1.2vw;
     padding: 1vw;
     border-radius: 20px;
