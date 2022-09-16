@@ -99,9 +99,7 @@ aside [type="email"], aside [type="password"] {
 
 .login-btn input {
     padding: .8vw 2vw;
-    color: white;
     background-color: #00a7aa;
-    border: none;
     border-radius: 30px;
     transition: .3s;
 }
@@ -147,5 +145,6 @@ article img {
 }
 
 .modal-footer button {
-    
+    width: 17vw;
+    font-size: 1vw;
 }
