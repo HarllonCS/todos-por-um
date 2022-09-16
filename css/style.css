@@ -1,11 +1,12 @@
 body {
     background-color: whitesmoke;
     font-family: 'poppinsregular';
-    width: 70vw;
-    margin: 0 auto;
-    padding: 1vw;
 }
 
+.cont {
+    width: 70vw;
+    padding: 1vw;
+}
 
 /* Formatação do Cabeçalho (logo) */
 
