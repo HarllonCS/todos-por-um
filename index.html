@@ -100,6 +100,11 @@
                             <!-- Título -->
                             <h5 class="modal-title font-weight-bold" id="labelEstatico">CADASTRO</h5>
                             <!-- /fim Título -->
+
+                            <p class="ml-5">
+                                <small class="text-danger">*</small>
+                                <span class="text-secondary">Campos obrigatórios</span>
+                            </p>
                             
                             <!-- Botão de fechar no canto superior -->
                             <button type="button" class="close" data-dismiss="modal" aria-label="close">
@@ -111,341 +116,85 @@
                         
                         <!-- Corpo do Modal -->
                         <div class="modal-body">
-
-                            <p class="mt-2">
-                                <small class="text-danger">*</small>
-                                <span class="text-secondary">Campos obrigatórios</span>
-                            </p>
-
+                            
                             <!-- Formulário de cadastro -->
                             <form action="">
-                                <p class="text-center titulo-modal text-light font-weight-bold my-4 py-1">INFORMAÇÕES DO ALUNO</p>
 
                                 <!-- Nome completo do aluno -->
-                                <div class="form-row mb-2">
-                                    <div class="form-group col">
-                                        <label for="idNome">Nome:</label>
-                                        <small class="text-danger">*</small>
+                                <div class="form-group tamanho-input-modal mb-4">
+                                    <label for="idNome">Nome Completo:</label>
+                                    <small class="text-danger">*</small>
 
-                                        <input type="text" class="form-control" name="usrNome" id="idNome">
-                                    </div>
-
-                                    <div class="form-group col">
-                                        <label for="idSobrenome">Sobrenome:</label>
-                                        <small class="text-danger">*</small>
-
-                                        <input type="text" class="form-control" name="usrSobrenome" id="idSobrenome">
-                                    </div>
+                                    <input type="text" class="form-control" name="usrNome" id="idNome" required>
                                 </div>
                                 <!-- /fim Nome do aluno -->
 
                                 <!-- Data de nascimento -->
-                                <div class="form-group mb-3">
+                                <div class="form-group mb-4">
                                     <label for="idData">Data de nascimento:</label>
                                     <small class="text-danger">*</small>
 
-                                    <input type="date" id="idData" class="form-control tamanho-input-modal">
+                                    <input type="date" id="idData" class="form-control tamanho-input-modal" required >
                                 </div>
                                 <!-- /fim Data de Nascimento -->
 
-                                <!-- Tipo sanguíneo -->
-                                <div class="form-group mb-3">
-                                    <label for="idTipoSanguineo">Tipo sanguíneo:</label>
-                                    <small class="text-danger">*</small>
-
-                                    <div class="d-flex">
-                                        <div class="mr-3"><!-- Samgue tipo A+ -->
-                                            <div class="form-check">
-                                                <input type="radio" id="idAMais" class="form-check-input" checked>
-                                                <label for="idAMais">A+</label>
-                                            </div>
-
-                                            <div class="form-check"> <!-- Sangue tipo A- -->
-                                                <input type="radio" id="idAmenos" class="form-check-input">
-                                                <label for="idAmenos">A-</label>
-                                            </div>
-                                        </div>
-
-                                        <div class="mr-3">
-                                            <div class="form-check"> <!-- Sangue tipo B+ -->
-                                                <input type="radio" id="idBmais" class="form-check-input">
-                                                <label for="idBmais">B+</label>
-                                            </div>
-
-                                            <div class="form-check"> <!-- Sangue tipo B- -->
-                                                <input type="radio" id="idBmenos" class="form-check-input">
-                                                <label for="idBmenos">B-</label>
-                                            </div>
-                                        </div>
-
-                                        <div class="mr-3">
-                                            <div class="form-check"> <!-- Sangue tipo AB+ -->
-                                                <input type="radio" id="idABMais" class="form-check-input">
-                                                <label for="idABMais">AB+</label>
-                                            </div>
-
-                                            <div class="form-check"> <!-- Sangue tipo AB- -->
-                                                <input type="radio" id="idABMenos" class="form-check-input">
-                                                <label for="idABMenos">AB-</label>
-                                            </div>
-                                        </div>
-
-                                        <div class="mr-3">
-                                            <div class="form-check"> <!-- Sangue tipo O+ -->
-                                                <input type="radio" id="idOmais" class="form-check-input">
-                                                <label for="idOmais">O+</label>
-                                            </div>
-
-                                            <div class="form-check"> <!-- Sangue tipo O- -->
-                                                <input type="radio" id="idOMenos" class="form-check-input">
-                                                <label for="idOMenos">O-</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- /fim Tipo sanguíneo -->
-
-                                <!-- Deficiência radio (Sim / Não) -->
-                                <div class="form-group mb-3">
-                                    <p>
-                                        Possui Deficiência:
-                                        <small class="text-danger">*</small>
-                                    </p>
-
-                                    <div class="d-flex">
-                                        <div class="form-check mr-3">
-                                            <input class="form-check-input" name="radio1" type="radio" id="idDefSim" value="defSim" checked>
-                                            <label class="form-check-label" for="idDefSim">Sim</label>
-                                        </div>
-
-                                        <div class="form-check">
-                                            <input class="form-check-input" name="radio1" type="radio" id="idDefNao" value="defNao">
-                                            <label class="form-check-label" for="idDefNao">Não</label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- /fim Deficiência radio (Sim / Não) -->
-
-                                <!-- Deficiência checkboxes -->
-                                <div class="form-group mb-3">
-                                    <label for="idDeficiencia">Qual(s) Deficiência(s):</label>
-
-                                    <div class="d-flex">
-                                        <div class="def-fisica"> <!-- Deficiências Físicas -->
-                                            <p class="font-weight-bold">Física</p>
-                                        
-                                            <div class="form-check mb-2">
-                                                <input class="form-check-input" type="checkbox" value="opt1" id="idDef1">
-
-                                                <label class="form-check-label" for="idDef1">
-                                                    Auditiva
-                                                </label>
-                                            </div>
-
-                                            <div class="form-check mb-2">
-                                                <input class="form-check-input" type="checkbox" value="opt2" id="idDef2">
-
-                                                <label class="form-check-label" for="idDef2">
-                                                    Visual
-                                                </label>
-                                            </div>
-
-                                            <div class="form-check mb-2">
-                                                <input class="form-check-input" type="checkbox" value="opt3" id="idDef3">
-
-                                                <label class="form-check-label" for="idDef3">
-                                                    Paraplegia
-                                                </label>
-                                            </div>
-
-                                            <div class="form-check mb-2">
-                                                <input class="form-check-input" type="checkbox" value="opt4" id="idDef4">
-
-                                                <label class="form-check-label" for="idDef4">
-                                                    Tetraplegia
-                                                </label>
-                                            </div>
-
-                                            <div class="form-check mb-2">
-                                                <input class="form-check-input" type="checkbox" value="opt5" id="idDef5">
-
-                                                <label class="form-check-label" for="idDef5">
-                                                    Monoplegia
-                                                </label>
-                                            </div>
-
-                                            <div class="form-check mb-2">
-                                                <input class="form-check-input" type="checkbox" value="opt6" id="idDef6">
-
-                                                <label class="form-check-label" for="idDef6">
-                                                    Hemiplegia
-                                                </label>
-                                            </div>
-
-                                            <div class="form-check mb-2">
-                                                <input class="form-check-input" type="checkbox" value="opt7" id="idDef7">
-
-                                                <label class="form-check-label" for="idDef7">
-                                                    Ostomia
-                                                </label>
-                                            </div>
-
-                                            <div class="form-check mb-2">
-                                                <input class="form-check-input" type="checkbox" value="opt8" id="idDef8">
-
-                                                <label class="form-check-label" for="idDef8">
-                                                    Paralisia Cerebral
-                                                </label>
-                                            </div>
-                                        </div> <!-- /fim Deficiências Físicas -->
-                                        
-                                        <div class="def-intel"> <!-- Deficiências Intelectuais -->
-                                            <p class="font-weight-bold">Intelectual</p>
-                                        
-                                            <div class="form-check mb-2">
-                                                <input class="form-check-input" type="checkbox" value="opt9" id="idDef9">
-
-                                                <label class="form-check-label" for="idDef9">
-                                                    Autismo Leve
-                                                </label>
-                                            </div>
-
-                                            <div class="form-check mb-2">
-                                                <input class="form-check-input" type="checkbox" value="opt10" id="idDef10">
-
-                                                <label class="form-check-label" for="idDef10">
-                                                    Autismo Moderado
-                                                </label>
-                                            </div>
-
-                                            <div class="form-check mb-2">
-                                                <input class="form-check-input" type="checkbox" value="opt11" id="idDef11">
-
-                                                <label class="form-check-label" for="idDef11">
-                                                    Autismo Grave
-                                                </label>
-                                            </div>
-
-                                            <div class="form-check mb-2">
-                                                <input class="form-check-input" type="checkbox" value="opt12" id="idDef12">
-
-                                                <label class="form-check-label" for="idDef12">
-                                                    Sídrome de Down
-                                                </label>
-                                            </div>
-                                        </div>  <!-- /fim Deficiências Intelectuais -->
-                                    </div>
-                                </div>  <!-- /fim Deficiência checkboxes -->
-
-                                <!-- Ensino -->
-                                <div class="form-group">
-                                    <label for="idTurma">Ensino:</label>
-                                    <small class="text-danger">*</small>
-
-                                    <select id="idTurma" class="form-control tamanho-input-modal">
-                                        <optgroup label="Ensino Infantil"> <!-- Ensino Infantil -->
-                                            <option value="infantilBercario">Infantil Berçário</option>
-                                            <option value="g1">Infantil G1</option>
-                                            <option value="g2">Infantil G2</option>
-                                            <option value="g3">Infantil G3</option>
-                                            <option value="g4">Infantil G4</option>
-                                            <option value="g5">Infantil G5</option>
-                                        </optgroup>
-
-                                        <optgroup label="Ensino Fundamental I"> <!-- Ensino Fundamental I -->
-                                            <option value="1-ano" selected>1º Ano</option>
-                                            <option value="2-ano">2º Ano</option>
-                                            <option value="3-ano">3º Ano</option>
-                                            <option value="4-ano">4º Ano</option>
-                                            <option value="5-ano">5º Ano</option>
-                                        </optgroup>
-
-                                        <optgroup label="Ensino Fundamental II"> <!-- Ensino Fundamnetal II -->
-                                            <option value="6-ano">6º Ano</option>
-                                            <option value="7-ano">7º Ano</option>
-                                            <option value="8-ano">8º Ano</option>
-                                            <option value="9-ano">9º Ano</option>
-                                        </optgroup>
-
-                                        <optgroup label="Ensino Médio"> <!-- Ensino Médio -->
-                                            <option value="1-ano-medio">1º Ano</option>
-                                            <option value="2-ano-medio">2º Ano</option>
-                                            <option value="3-ano-medio">3º Ano</option>
-                                        </optgroup>
-                                    </select>
-                                </div> <!-- /fim Ensino -->
-
-                                <!-- Turno -->
-                                <div class="form-group">
-                                    <p>Turno:<small class="text-danger">*</small></p>
-
-                                    <div class="d-flex">
-                                        <div class="form-check mr-3"> <!-- Turno da Manhã -->
-                                            <input type="radio" id="idManha"  class="form-check-input" checked>
-                                            <label for="idManha">Manhã</label>
-                                        </div>
-
-                                        <div class="form-check mr-3"> <!-- Turno da Tarde -->
-                                            <input type="radio" id="idTarde" class="form-check-input">
-                                            <label for="idTarde">Tarde</label>
-                                        </div>
-
-                                        <div class="form-check"> <!-- Turno Integral -->
-                                            <input type="radio" id="idIntegral" class="form-check-input">
-                                            <label for="idIntegral">Integral</label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- /fim Turno -->
-
                                 <!-- E-mail -->
-                                <div class="form-group mb-3">
+                                <div class="form-group mb-4">
                                     <label for="idEmail">E-mail:</label>
                                     <small class="text-danger">*</small>
 
-                                    <input id="idEmail" class="form-control tamanho-input-modal" type="email" aria-describedby="emailHelp">
+                                    <input id="idEmail" class="form-control tamanho-input-modal" type="email" aria-describedby="emailHelp" required>
 
                                     <small class="text-secondary">Não compartilharemos seu e-mail com ninguém.</small>
                                 </div>
                                 <!-- /fim E-mail -->
 
                                 <!-- Telefone -->
-                                <div class="form-row mb-3">
+                                <div class="form-row mb-4">
                                     <div class="form-group col">
                                         <label for="idTel">Telefone:</label>
-                                        <small class="text-danger">*</small>
 
-                                        <input type="tel" id="idTel" class="form-control">
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text" id="basic-addon">+55</span>
+                                            </div>
+
+                                            <input type="tel" id="idTel" class="form-control" aria-label="usrTelefone" aria-describedby="basic-addon">
+                                        </div>
                                     </div>
 
                                     <div class="form-group col">
                                         <label for="idCel">Celular:</label>
+                                        <small class="text-danger">*</small>
 
-                                        <input type="tel" id="idTel" class="form-control">
+                                        <input type="tel" id="idCel" class="form-control"  required>
                                     </div>
                                 </div>
                                 <!-- /fim Telefone -->
 
-                                <p class="text-center titulo-modal text-light font-weight-bold my-4 py-1">INFORMAÇÕES DA ESCOLA</p>
-
-                                <!-- Nome da Instituição de Ensino -->
-                                <div class="form-group mb-3">
-                                    <label for="escolaNome">Nome da Instituição:</label>
+                                <!-- Localização -->
+                                <p>
+                                    Localização:
                                     <small class="text-danger">*</small>
+                                </p>
 
-                                    <input id="escolaNome" type="text" class="form-control tamanho-input-modal">
-                                </div>
-                                <!-- /fim Nome da Instituição de Ensino -->
-
-                                <!-- Localização da instituição -->
                                 <div class="form-row">
-                                    <div class="form-group col">
+                                    <div class="form-group col"> <!-- Bairro -->
+                                        <label for="idBairro">CEP:</label>
 
-                                        <!-- Estado -->
+                                        <input type="number" id="idBairro" class="form-control" min="0" required>
+                                    </div>
+
+                                    <div class="form-group col">  <!-- Cidade -->
+                                        <label for="idCid">Cidade:</label>
+
+                                        <input type="text" id="idCid" class="form-control" placeholder="EX.: São Paulo" required>
+                                    </div>
+
+                                    <div class="form-group col"> <!-- Estado -->
                                         <label for="idEstado">Estado:</label>
-                                        <small class="text-danger">*</small>
                                         
-                                        <select id="idEstado" class="form-control">
+                                        <select id="idEstado" class="form-control" required>
                                             <optgroup label="Norte">
                                                 <option value="AC">Acre</option>
                                                 <option value="AP">Amapá</option>
@@ -490,20 +239,6 @@
                                         </select>
                                     </div>
                                     <!-- /fim Estado -->
-
-                                    <div class="form-group col">  <!-- Cidade -->
-                                        <label for="idCid">Cidade:</label>
-                                        <small class="text-danger">*</small>
-
-                                        <input type="text" id="idCid" class="form-control">
-                                    </div>
-
-                                    <div class="form-group col"> <!-- Bairro -->
-                                        <label for="idBairro">Bairro:</label>
-                                        <small class="text-danger">*</small>
-
-                                        <input type="text" id="idBairro" class="form-control">
-                                    </div>
                                 </div>
                                 <!-- /fim Localização da instituição -->
                             </form>
