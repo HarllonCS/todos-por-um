@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
+    <title>Tabela</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+    <div class="cont mx-auto">
+        <header><!-- início Cabeçalho -->
+            
+            <nav class="navbar navbar-expand-lg"><!-- Menu -->
+
+                <div class="logo"><!-- Logotipo "Todos Por Um" -->
+                    <a href="index.html">
+                        <h1 class="font-weight-bold text-dark"><span>TODOS</span><br>POR UM</h1>
+                    </a>
+                </div><!-- /fim Logotipo "Todos Por Um" -->
+            
+                <!-- Menu responsivo -->
+
+                <div id="navegacao" class="collapse navbar-collapse">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item font-weight-bold">
+                            <a href="index.html" class="nav-link">Início</a>
+                        </li>
+
+                        <li class="nav-item font-weight-bold">
+                            <a href="#" class="nav-link">Serviços</a>
+                        </li>
+
+                        <li class="nav-item font-weight-bold">
+                            <a href="#" class="nav-link">Sobre</a>
+                        </li>
+
+                        <li class="nav-item font-weight-bold">
+                            <a href="#" class="nav-link">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Botão "hambúrguer" do menu responsivo -->
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#navegacao">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- /fim Botão "hambúrguer" do menu responsivo -->
+                
+                <!-- /fim Menu responsivo -->
+
+            </nav> <!-- /fim Menu -->
+
+        </header> <!-- /fim Cabeçalho -->
+
+        <button class="btn btn-info tabela-btn">
+            Cadastrar novo aluno
+        </button>
+
+        <main role="main" class="w-75 mx-auto">
+            <table class="table table-striped table-bordered">
+                <thead class="thead-dark">
+                    <th scope="col">ID</th>
+                    <th scope="col">NOME</th>
+                    <th scope="col">ANO E TURMA</th>
+                    <th scope="col">TURNO</th>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Fulano</td>
+                        <td>9º C</td>
+                        <td>Tarde</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Cilando</td>
+                        <td>7º B</td>
+                        <td>Manhã</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Beutrano</td>
+                        <td>6º A</td>
+                        <td>Integral</td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+</body>
+</html>

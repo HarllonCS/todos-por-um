@@ -8,11 +8,13 @@ body {
     padding: 1vw;
 }
 
+
 /* Formatação do Cabeçalho (logo) */
 
-.logo h1 {
+.navbar-brand {
     color: black;
     font-size: 3vw;
+    line-height: 2.8vw;
 }
 
 .logo a:hover {
@@ -25,7 +27,7 @@ body {
 .nav-item {
     margin-left: 3.5vw;
     cursor: pointer;
-    font-size: 1vw;
+    font-size: .9vw;
 }
 
 .nav-link {
@@ -64,13 +66,14 @@ aside h2 {
     font-family: 'poppinsmedium';
 }
 
-aside span {
+aside span, .logo span {
     color: #00a7aa;
 }
 
 aside p {
     line-height: 1.3vw;
     font-family: 'poppinslight';
+    font-size: .9vw;
 }
 
 /* Formatação dos campos (inputs) */
@@ -80,7 +83,7 @@ aside p {
     font-size: .9vw;
 }
 
-form [type="email"], [type="password"] {
+aside [type="email"], aside [type="password"] {
     margin-top: 1.2vw;
     padding: 1vw;
     border-radius: 20px;
@@ -97,9 +100,7 @@ form [type="email"], [type="password"] {
 
 .login-btn input {
     padding: .8vw 2vw;
-    color: white;
     background-color: #00a7aa;
-    border: none;
     border-radius: 30px;
     transition: .3s;
 }
@@ -124,5 +125,17 @@ form [type="email"], [type="password"] {
 /* Imagem animada */
 
 article img {
-    width: 30vw;
+    width: 28vw;
+}
+
+/* Tabela */
+
+table {
+    width: 10px;
+}
+
+.tabela-btn {
+    margin-left: 55vw;
+    font-size: .9vw;
+    
 }

@@ -1,15 +1,12 @@
 /* ESTILIZAÇÃO DO MENÚ RESPONSIVO */
 
-@media screen and (max-width: 760px) {
-
-    body {
-        width: 100%;
-    }
+@media (max-width: 991.98px) {
 
     /* Título "Todos Por Um" */
 
-    .logo h1 {
+    .navbar-brand {
         font-size: 8vw;
+        line-height: 7.5vw;
     }
 
     /* Botão "hambúrguer" do menu responsivo */
@@ -38,13 +35,14 @@
     }
 
     aside h2 {
-        font-size: 10vw;
+        font-size: 8vw;
         text-align: center;
         line-height: 9vw;
     }
 
     aside p {
-        line-height: 4.2vw;
+        line-height: 3.8vw;
+        font-size: 2.5vw;
     }
 
     .login-inputs {
@@ -52,7 +50,7 @@
         margin-top: 2vw;
     }
 
-    input[type="email"], [type="password"] {
+    aside input[type="email"], aside input[type="password"] {
         padding: 3vw;
         margin-top: 4vw;
     }
@@ -78,7 +76,7 @@
         font-size: 4vw;
     }
 
-    /* Imagem animada não aparece no responsivo*/
+    /* Imagem animada não aparece */
 
     img {
         display: none;
