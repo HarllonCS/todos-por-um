@@ -103,4 +103,8 @@
     .tamanho-input-modal {
         width: 100%;
     }
+
+    .coluna {
+        flex-direction: column;
+    }
 }
