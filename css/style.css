@@ -11,7 +11,7 @@ body {
 
 /* Formatação do Cabeçalho (logo) */
 
-.logo h1 {
+.navbar-brand {
     color: black;
     font-size: 3vw;
 }
