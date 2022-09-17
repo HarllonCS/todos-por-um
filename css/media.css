@@ -1,11 +1,12 @@
 /* ESTILIZAÇÃO DO MENÚ RESPONSIVO */
 
-@media screen and (max-width: 990px) {
+@media (max-width: 991.98px) {
 
     /* Título "Todos Por Um" */
 
-    .logo h1 {
+    .navbar-brand {
         font-size: 8vw;
+        line-height: 7.5vw;
     }
 
     /* Botão "hambúrguer" do menu responsivo */
