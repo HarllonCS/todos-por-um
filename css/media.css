@@ -81,4 +81,14 @@
     img {
         display: none;
     }
+
+    /* Modal do cadastro do aluno */
+
+    .cadastro-aluno {
+        flex-direction: column;
+    }
+
+    .modal-cadastro-mobile {
+        width: 80vw;
+    }
 }

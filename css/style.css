@@ -128,14 +128,19 @@ article img {
     width: 28vw;
 }
 
+
 /* Tabela */
 
 table {
     width: 10px;
 }
 
-.tabela-btn {
-    margin-left: 55vw;
+.table-btn {
+    margin-left: 45vw;
     font-size: .9vw;
-    
+    background-color: #00a7aa;
+}
+
+.bg-table-thead {
+    background-color: #00a7aa;
 }

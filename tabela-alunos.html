@@ -58,13 +58,225 @@
 
         </header> <!-- /fim Cabeçalho -->
 
-        <button class="btn btn-info tabela-btn">
-            Cadastrar novo aluno
+        <button type="button" class="btn btn-info table-btn font-weight-bold mt-5" data-toggle="modal" data-target="#alunoCadastro">
+            CADASTRAR NOVO ALUNO
         </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="alunoCadastro" tabindex="-1" aria-labelledby="labelEstatico" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content modal-cadastro-mobile">
+
+                    <!-- Cabeçalho do Modal -->
+                    <div class="modal-header">
+
+                        <!-- Título -->
+                        <h5 class="modal-title font-weight-bold" id="labelEstatico">CADASTRO DO ALUNO</h5>
+                        <!-- /fim Título -->
+                        
+                        <!-- Botão de fechar no canto superior -->
+                        <button type="button" class="close" data-dismiss="modal" aria-label="close">
+                            <span aria-hidden="true" class="badge badge-danger">&times;</span>
+                        </button>
+                        <!-- /fim Botão de fechar no canto superior -->
+                    </div>
+                    <!-- /fim Cabeçalho do Modal -->
+                    
+                    <!-- Corpo do Modal -->
+                    <div class="modal-body">
+                        
+                        <p class="mb-4">
+                            <small class="text-danger">*</small>
+                            <span class="text-secondary">Preenchimento obrigatório</span>
+                        </p>
+
+                        <!-- Formulário de cadastro -->
+                        <form action="">
+
+                            <!-- Nome completo do aluno -->
+                            <div class="form-row cadastro-aluno mb-2">
+                                <div class="form-group col">
+                                    <label for="idNome">Nome:</label>
+                                    <small class="text-danger">*</small>
+
+                                    <input type="text" class="form-control" id="idNome" required>
+                                </div>
+
+                                <div class="form-group col">
+                                    <label for="idSobrenome">Sobrenome:</label>
+                                    <small class="text-danger">*</small>
+
+                                    <input type="text" class="form-control" id="idSobrenome" required>
+                                </div>
+                            </div>
+                            <!-- /fim Nome do aluno -->
+
+                            <!-- Data de nascimento -->
+                            <div class="form-group mb-4">
+                                <label for="idData">Data de nascimento:</label>
+                                <small class="text-danger">*</small>
+
+                                <input type="date" id="idData" class="form-control tamanho-input-modal" required>
+                            </div>
+                            <!-- /fim Data de Nascimento -->
+
+                            <!-- Tipo sanguíneo -->
+                            <div class="form group mb-4">
+                                <label for="idSangue">Tipo sanguíneo:</label>
+                                <small class="text-danger">*</small>
+
+                                <select id="idSangue" class="form-control" required>
+                                    <option value="Amais">A+</option>
+                                    <option value="Amenos">A-</option>
+
+                                    <option value="Bmais">B+</option>
+                                    <option value="Bmenos">B-</option>
+
+                                    <option value="ABmais">AB+</option>
+                                    <option value="ABmenos">AB-</option>
+
+                                    <option value="Omais">O+</option>
+                                    <option value="Omenos">O-</option>
+                                </select>
+                            </div>
+                            <!-- /fim Tipo sanguíneo -->
+
+                            <!-- Deficiências (Sim/Não) -->
+                            <div class="form-group mb-4">
+                                <p>
+                                    Possui deficiência:
+                                    <small class="text-danger">*</small>
+                                </p>
+                            
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" type="radio" name="def" id="idDefSim" value="opt1" checked>
+
+                                    <label for="idDefSim" class="form-check-label ml-1">Sim</label>
+                                </div>
+
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" type="radio" name="def" id="idDefNao" value="opt2">
+
+                                    <label for="idDefNao" type="radio" class="form-check-label ml-1">Não</label>
+                                </div>
+                            </div>
+                            <!-- /fim Deficiências (Sim/Não) -->
+
+                            <!-- Escolher deficiência(s) -->
+                            <div class="form-group mb-4">
+                                <p>Qual(s) deficiência(s):</p>
+
+                                <div class="d-flex">
+
+                                    <!-- Deficiência físicas -->
+                                    <div class="col">
+                                        <p class="font-weight-bold">Física</p>
+
+                                        <div class="form-check mb-1">
+                                            <input class="form-check-input" type="checkbox" id="idCheckFis1">
+
+                                            <label class="form-check-label" for="idCheckFis1">Auditiva</label>
+                                        </div>
+
+                                        <div class="form-check mb-1">
+                                            <input class="form-check-input" type="checkbox" id="idCheckFis2">
+
+                                            <label class="form-check-label" for="idCheckFis2">Visual</label>
+                                        </div>
+
+                                        <div class="form-check mb-1">
+                                            <input class="form-check-input" type="checkbox" id="idCheckFis3">
+
+                                            <label class="form-check-label" for="idCheckFis3">Paraplegia</label>
+                                        </div>
+
+                                        <div class="form-check mb-1">
+                                            <input class="form-check-input" type="checkbox" id="idCheckFis4">
+
+                                            <label class="form-check-label" for="idCheckFis4">Monoplegia</label>
+                                        </div>
+
+                                        <div class="form-check mb-1">
+                                            <input class="form-check-input" type="checkbox" id="idCheckFis5">
+
+                                            <label class="form-check-label" for="idCheckFis5">Tetraplegia</label>
+                                        </div>
+
+                                        <div class="form-check mb-1">
+                                            <input class="form-check-input" type="checkbox" id="idCheckFis6">
+
+                                            <label class="form-check-label" for="idCheckFis6">Hemiplegia</label>
+                                        </div>
+
+                                        <div class="form-check mb-1">
+                                            <input class="form-check-input" type="checkbox" id="idCheckFis7">
+
+                                            <label class="form-check-label" for="idCheckFis7">Ostomia</label>
+                                        </div>
+
+                                        <div class="form-check mb-1">
+                                            <input class="form-check-input" type="checkbox" id="idCheckFis8">
+
+                                            <label class="form-check-label" for="idCheckFis8">Paralisia cerebral</label>
+                                        </div>
+                                    </div>
+                                    <!-- /fim Deficiências físicas -->
+                                    
+                                    <!-- Deficiências intelectuais -->
+                                    <div class="col">
+                                        <p class="font-weight-bold">Intelectual</p>
+
+                                        <div class="form-check mb-1">
+                                            <input class="form-check-input" type="checkbox" id="idCheckInt1">
+
+                                            <label class="form-check-label" for="idCheckInt1">Autismo Leve</label>
+                                        </div>
+
+                                        <div class="form-check mb-1">
+                                            <input class="form-check-input" type="checkbox" id="idCheckInt2">
+
+                                            <label class="form-check-label" for="idCheckInt2">Autismo Moderado</label>
+                                        </div>
+
+                                        <div class="form-check mb-1">
+                                            <input class="form-check-input" type="checkbox" id="idCheckInt3">
+
+                                            <label class="form-check-label" for="idCheckInt3">Autismo Grave</label>
+                                        </div>
+
+                                        <div class="form-check mb-1">
+                                            <input class="form-check-input" type="checkbox" id="idCheckInt4">
+
+                                            <label class="form-check-label" for="idCheckInt4">Síndrome de Down</label>
+                                        </div>
+                                    </div>
+                                    <!-- /fim Deficiências intelectuais -->
+                                </div>
+                            </div>
+                            <!-- /fim Escolher deficiência(s) -->
+                        </form>
+                        <!-- /fim Formulário de cadastro -->
+                    </div>
+                    <!-- /fim Corpo do Modal -->
+                    
+                    <!-- Rodapé do Modal -->
+                    <div class="modal-footer">
+                        
+                        <!-- Botão de Enviar -->
+                        <button type="button" class="btn btn-success font-weight-bold mx-auto w-75">
+                            ENVIAR
+                        </button>
+                        <!-- /fim Botão de Enviar -->
+                    </div>
+                    <!-- /fim Rodapé do Modal -->
+                </div>
+            </div>
+        </div>
+        <!-- /fim Modal -->
 
         <main role="main" class="w-75 mx-auto">
             <table class="table table-striped table-bordered">
-                <thead class="thead-dark">
+                <thead class="bg-table-thead text-light">
                     <th scope="col">ID</th>
                     <th scope="col">NOME</th>
                     <th scope="col">ANO E TURMA</th>
@@ -81,7 +293,7 @@
 
                     <tr>
                         <th scope="row">2</th>
-                        <td>Cilando</td>
+                        <td>Ciclano</td>
                         <td>7º B</td>
                         <td>Manhã</td>
                     </tr>
