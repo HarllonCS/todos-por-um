@@ -5,8 +5,8 @@
     /* Título "Todos Por Um" */
 
     .navbar-brand {
-        font-size: 8vw;
-        line-height: 7.5vw;
+        font-size: 6vw;
+        line-height: 5.2vw;
     }
 
     /* Botão "hambúrguer" do menu responsivo */
@@ -27,7 +27,7 @@
     }
 
     nav a {
-        font-size: 3.5vw;
+        font-size: 3vw;
     }
 
     aside {
@@ -84,7 +84,7 @@
 
 
     /* Modal de cadastro dos pais */
-    
+
     .modal-content {
         width: 90vw;
         box-shadow: none;
@@ -119,5 +119,11 @@
 
     .modal-cadastro-mobile {
         width: 80vw;
+    }
+
+    .table-btn {
+        display: block;
+        font-size: 3.2vw;
+        margin: auto;
     }
 }
