@@ -70,11 +70,13 @@ aside span, .logo span {
     color: #00a7aa;
 }
 
+/*
 aside p {
     line-height: 1.3vw;
     font-family: 'poppinslight';
     font-size: .9vw;
 }
+*/
 
 /* Formatação dos campos (inputs) */
 
@@ -129,18 +131,36 @@ article img {
 }
 
 
+/* Modal */
+
+.titulo-modal {
+    background-color: #00a7aa;
+    font-size: .9vw;
+}
+
+.modal-content {
+    width: 30vw;
+    box-shadow: 1px 1px 12px 6px rgba(0, 0, 0, 0.274);
+}
+
+
 /* Tabela */
 
 table {
-    width: 10px;
+    box-shadow: 1px 3px 15px 1px rgba(0, 0, 0, 0.274);
 }
 
 .table-btn {
-    margin-left: 45vw;
+    margin-left: 50vw;
     font-size: .9vw;
     background-color: #00a7aa;
 }
 
 .bg-table-thead {
     background-color: #00a7aa;
+}
+
+.modal-footer button {
+    width: 17vw;
+    font-size: 1vw;
 }

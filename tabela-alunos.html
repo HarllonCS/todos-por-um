@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
     <title>Tabela</title>
 
+    <link rel="shortcut icon" href="imgs/livro-icon.ico" type="image/x-icon">
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
 
     <link rel="stylesheet" href="css/style.css">
@@ -26,6 +28,12 @@
             
                 <!-- Menu responsivo -->
 
+                <!-- Botão "hambúrguer" do menu responsivo -->
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#navegacao">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- /fim Botão "hambúrguer" do menu responsivo -->
+
                 <div id="navegacao" class="collapse navbar-collapse">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item font-weight-bold">
@@ -45,12 +53,6 @@
                         </li>
                     </ul>
                 </div>
-
-                <!-- Botão "hambúrguer" do menu responsivo -->
-                <button class="navbar-toggler" data-toggle="collapse" data-target="#navegacao">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <!-- /fim Botão "hambúrguer" do menu responsivo -->
                 
                 <!-- /fim Menu responsivo -->
 
@@ -123,9 +125,10 @@
                             <!-- Tipo sanguíneo -->
                             <div class="form group mb-4">
                                 <label for="idSangue">Tipo sanguíneo:</label>
-                                <small class="text-danger">*</small>
 
-                                <select id="idSangue" class="form-control" required>
+                                <select id="idSangue" class="form-control">
+                                    <option value="SemInfo" selected>-- Selecionar --</option>
+
                                     <option value="Amais">A+</option>
                                     <option value="Amenos">A-</option>
 
@@ -274,8 +277,8 @@
         </div>
         <!-- /fim Modal -->
 
-        <main role="main" class="w-75 mx-auto">
-            <table class="table table-striped table-bordered">
+        <main role="main">
+            <table class="table table-striped table-bordered w-75 mx-auto">
                 <thead class="bg-table-thead text-light">
                     <th scope="col">ID</th>
                     <th scope="col">NOME</th>
