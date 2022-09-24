@@ -97,11 +97,6 @@
                             <!-- Título -->
                             <h5 class="modal-title font-weight-bold" id="labelEstatico">CADASTRO</h5>
                             <!-- /fim Título -->
-
-                            <p class="ml-5">
-                                <small class="text-danger">*</small>
-                                <span class="text-secondary">Campos obrigatórios</span>
-                            </p>
                             
                             <!-- Botão de fechar no canto superior -->
                             <button type="button" class="close" data-dismiss="modal" aria-label="close">
@@ -114,6 +109,11 @@
                         <!-- Corpo do Modal -->
                         <div class="modal-body">
                             
+                            <p class="mb-4">
+                                <small class="text-danger">*</small>
+                                <span class="text-secondary">Preenchimento obrigatório</span>
+                            </p>
+
                             <!-- Formulário de cadastro -->
                             <form action="">
 
@@ -131,7 +131,7 @@
                                     <label for="idData">Data de nascimento:</label>
                                     <small class="text-danger">*</small>
 
-                                    <input type="date" id="idData" class="form-control tamanho-input-modal" required >
+                                    <input type="date" id="idData" class="form-control tamanho-input-modal" required>
                                 </div>
                                 <!-- /fim Data de Nascimento -->
 
@@ -194,10 +194,10 @@
                                 </p>
 
                                 <div class="form-row coluna">
-                                    <div class="form-group col"> <!-- Bairro -->
-                                        <label for="idBairro">CEP:</label>
+                                    <div class="form-group col"> <!-- CEP -->
+                                        <label for="idCEP">CEP:</label>
 
-                                        <input type="number" id="idBairro" class="form-control" min="0" required>
+                                        <input type="number" id="idCEP" class="form-control" min="0" required>
                                     </div>
 
                                     <div class="form-group col">  <!-- Cidade -->
@@ -255,7 +255,7 @@
                                     </div>
                                     <!-- /fim Estado -->
                                 </div>
-                                <!-- /fim Localização da instituição -->
+                                <!-- /fim Localização -->
                             </form>
                             <!-- /fim Formulário de cadastro -->
                         </div>

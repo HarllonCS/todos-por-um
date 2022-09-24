@@ -139,21 +139,21 @@ article img {
 }
 
 .modal-content {
-    width: 30vw;
+    width: 32vw;
     box-shadow: 1px 1px 12px 6px rgba(0, 0, 0, 0.274);
 }
 
 
 /* Tabela */
 
-table {
-    box-shadow: 1px 3px 15px 1px rgba(0, 0, 0, 0.274);
+.table-btn {
+    margin-left: 60vw;
+    cursor: pointer;
+    background-color: #00a7aa;
 }
 
-.table-btn {
-    margin-left: 50vw;
-    font-size: .9vw;
-    background-color: #00a7aa;
+.table-btn:hover {
+    background-color: #019092;
 }
 
 .bg-table-thead {
