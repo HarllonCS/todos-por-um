@@ -11,13 +11,12 @@ body {
 
 /* Formatação do Cabeçalho (logo) */
 
-.navbar-brand {
-    color: black;
+.navbar-brand h1 {
     font-size: 3vw;
     line-height: 2.8vw;
 }
 
-.logo a:hover {
+.navbar-brand a {
     text-decoration: none;
 }
 
@@ -35,13 +34,12 @@ body {
     transition: .3s;
 }
 
-.active {
+.nav-link:hover, .ativo {
     color: #00a7aa;
-    cursor: auto;
 }
 
-.nav-link:hover {
-    color: #00a7aa;
+.ativo {
+    cursor: auto;
 }
 
 /* Formatação da tela de login */
@@ -56,7 +54,6 @@ main {
 aside {
     width: 30vw;
     padding: 2vw;
-    box-shadow: 0px 10px 15px 8px rgba(0, 0, 0, 0.274);
     border-radius: 10px;
 }
 
@@ -66,7 +63,7 @@ aside h2 {
     font-family: 'poppinsmedium';
 }
 
-aside span, .logo span {
+aside span, .navbar-brand span {
     color: #00a7aa;
 }
 
@@ -108,14 +105,13 @@ aside [type="email"], aside [type="password"] {
 }
 
 .login-btn input:hover {
-    cursor: pointer;
-    color: white;
     background-color: #00c0c4;
 }
 
 .login-btn a {
     color: #00a7aa;
     margin-top: .8vw;
+    text-decoration: none;
 }
 
 .login-btn a:hover {
@@ -133,13 +129,7 @@ article img {
 
 /* Modal */
 
-.titulo-modal {
-    background-color: #00a7aa;
-    font-size: .9vw;
-}
-
 .modal-content {
-    width: 32vw;
     box-shadow: 1px 1px 12px 6px rgba(0, 0, 0, 0.274);
 }
 
@@ -150,6 +140,7 @@ article img {
     margin-left: 60vw;
     cursor: pointer;
     background-color: #00a7aa;
+    transition: .3s;
 }
 
 .table-btn:hover {
