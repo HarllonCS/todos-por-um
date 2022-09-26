@@ -1,7 +1,4 @@
 <template>
-
-    <link rel="shortcut icon" href="imgs/livro-icon.ico" type="image/x-icon">
-
     <div class="body">
         <div class="cont mx-auto">
             <header><!-- início Cabeçalho -->
@@ -61,7 +58,7 @@
                         </div>
 
                         <div class="login-btn d-flex">
-                            <input type="submit" class="border-0 fw-bold text-light" value="ENTRAR">
+                            <input type="submit" class="btn fw-bold text-light" value="ENTRAR">
 
                             <a class="fw-bold" type="button" data-bs-toggle="modal" data-bs-target="#formModal">Cadastrar</a>
                         </div>
@@ -248,14 +245,6 @@
         </div>
     </div>
 </template>
-
-<script>
-
-    export default {
-        name: 'index'
-    }
-    
-</script>
 
 <style scoped>
 
