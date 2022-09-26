@@ -21,7 +21,7 @@
                         <div id="navegacao" class="collapse navbar-collapse">
                             <ul class="navbar-nav ms-auto">
                                 <li class="nav-item fw-bold">
-                                    <a href="index.html" class="nav-link ativo">Início</a>
+                                    <a href="index.html" class="nav-link">Início</a>
                                 </li>
 
                                 <li class="nav-item fw-bold">

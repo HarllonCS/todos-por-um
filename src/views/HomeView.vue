@@ -1,7 +1,7 @@
 <template>
   <div class="home">
   
-    <Pagprof/>
+    <Index/>
 
   </div>
 </template>

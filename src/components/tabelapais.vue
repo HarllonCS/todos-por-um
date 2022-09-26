@@ -91,13 +91,35 @@
                                     </div>
                                 </div>  <!-- /fim Nome e Sobrenome do aluno -->
 
+                                <div class="row mb-4">
                                 <!-- Data de nascimento -->
-                                <div class="mb-4">
-                                    <label for="idData">Data de nascimento:</label>
-                                    <small class="text-danger">*</small>
+                                    <div class="col">
+                                        <label for="idData">Data de nascimento:</label>
+                                        <small class="text-danger">*</small>
 
-                                    <input type="date" id="idData" class="form-control tamanho-input-modal w-75" required>
-                                </div>  <!-- /fim Data de Nascimento -->
+                                        <input type="date" id="idData" class="form-control" required>
+                                    </div>  <!-- /fim Data de Nascimento -->
+
+                                    <div class="col">
+                                        <p>
+                                            Sexo:
+                                            <small class="text-danger">*</small>
+                                        </p>
+
+                                        <div class="form-check form-check-inline">
+                                            <input type="radio" class="form-check-input" name="sexo" id="idMasc" value="opt1">
+
+                                            <label for="idDMasc" class="form-check-label">Masculino</label>
+                                        </div>
+
+                                        <div class="form-check form-check-inline">
+                                            <input type="radio" class="form-check-input" name="sexo" id="idFem" value="opt2" checked>
+
+                                            <label for="idFem" type="radio" class="form-check-label">Feminino</label>
+                                        </div>
+
+                                    </div>
+                                </div>
 
                                 <!-- Tipo sanguíneo -->
                                 <div class="row coluna mb-4">
@@ -538,12 +560,12 @@
     
     .modal-content {
         box-shadow: 1px 1px 12px 6px rgba(0, 0, 0, 0.274);
-    }
-    
-    .modal-content {
         text-align: start;
     }
     
+    .modal-dialog {
+        max-width: 35vw;
+    }
     
     /* Tabela */
     
@@ -681,10 +703,6 @@
         .modal-footer button {
             font-size: 3.5vw;
             width: 65vw;
-        }
-    
-        .tamanho-input-modal {
-            width: 100%;
         }
     
         .coluna {
