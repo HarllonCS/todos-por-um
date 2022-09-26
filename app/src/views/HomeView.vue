@@ -1,7 +1,7 @@
 <template>
   <div class="home">
   
-    <Index/>
+    <Tabelapais/>
     
   </div>
 </template>
