@@ -47,14 +47,14 @@
 
             <main role="main" class="main-prof">
                 <div class="accordion col-6 mx-auto">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="accordion-1">
+                    <div class="accordion-item" id="accordion-1">
+                        <h2 class="accordion-header" id="accordion-header-1">
                             <button class="accordion-button collapsed text-light fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-collapse-1" aria-expanded="false" aria-controls="accordion-collapse-1">
                                 1º A - TARDE
                             </button>
                         </h2>
 
-                        <div id="accordion-collapse-1" class="accordion-collapse collapse" aria-labelledby="accordion-1">
+                        <div id="accordion-collapse-1" class="accordion-collapse collapse" aria-labelledby="accordion-header-1">
                             <div class="accordion-body">
                                 <ul class="list-group list-group-flush fs-5 text-start">
                                     <li class="list-group-item">Fulano</li>
@@ -65,14 +65,14 @@
                         </div>
                     </div>
 
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="accordion-2">
+                    <div class="accordion-item" id="accordion-1">
+                        <h2 class="accordion-header" id="accordion-header-2">
                             <button class="accordion-button collapsed text-light fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-collapse-2" aria-expanded="false" aria-controls="accordion-collapse-2">
                                 2º A - manhã
                             </button>
                         </h2>
 
-                        <div id="accordion-collapse-2" class="accordion-collapse collapse" aria-labelledby="accordion-2">
+                        <div id="accordion-collapse-2" class="accordion-collapse collapse" aria-labelledby="accordion-header-2">
                             <div class="accordion-body">
                                 <ul class="list-group list-group-flush fs-5 text-start">
                                     <li class="list-group-item">Fulano</li>
@@ -83,14 +83,14 @@
                         </div>
                     </div>
 
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="accordion-3">
+                    <div class="accordion-item" id="accordion-3">
+                        <h2 class="accordion-header" id="accordion-header-3">
                             <button class="accordion-button collapsed text-light fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-collapse-3" aria-expanded="false" aria-controls="accordion-collapse-3">
                                 3º B - TARDE
                             </button>
                         </h2>
 
-                        <div id="accordion-collapse-3" class="accordion-collapse collapse" aria-labelledby="accordion-3">
+                        <div id="accordion-collapse-3" class="accordion-collapse collapse" aria-labelledby="accordion-header-3">
                             <div class="accordion-body">
                                 <ul class="list-group list-group-flush fs-5 text-start">
                                     <li class="list-group-item">Fulano</li>
