@@ -314,6 +314,7 @@
 .body {
     background-color: whitesmoke;
     font-family: 'poppinsregular';
+    height: 100vh;
 }
 
 .cont {
