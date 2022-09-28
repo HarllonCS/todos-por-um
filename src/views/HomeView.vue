@@ -18,6 +18,6 @@ export default {
     Index,
     Tabelapais,
     Pagprof
-}
+  }
 }
 </script>

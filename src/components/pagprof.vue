@@ -1,4 +1,7 @@
 <template>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
     <div class="body">
         <div class="cont mx-auto">
             <header><!-- início Cabeçalho -->
@@ -44,64 +47,92 @@
             <p class="float-end">
                 Prof. Nome
             </p>
-
             <main role="main" class="main-prof">
-                <div class="accordion col-6 mx-auto">
+                <!--
+                <div class="d-grid gap-2 col-6 mx-auto">
+                    <button type="button" class="btn text-light fw-bold fs-4">
+                        1º ANO A - MANHÃ
+                    </button>
+
+                    <button type="button" class="btn text-light fw-bold fs-4">
+                        3º ANO B - TARDE
+                    </button>
+
+                    <button type="button" class="btn text-light fw-bold fs-4">
+                        2º ANO B - TARDE
+                    </button>
+                </div>-->
+
+                <div class="accordion w-50 mx-auto">
                     <div class="accordion-item" id="accordion-1">
                         <h2 class="accordion-header" id="accordion-header-1">
-                            <button class="accordion-button collapsed text-light fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-collapse-1" aria-expanded="false" aria-controls="accordion-collapse-1">
-                                1º A - TARDE
+                            <button class="accordion-button collapsed fw-bold fs-4 d-flex" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-collapse-1" aria-expanded="false" aria-controls="accordion-collapse-1">
+                                <p class="col">FULANO</p>
+
+                                
+                                <span class="material-icons fs-1 me-3">
+                                    all_inclusive
+                                </span>
+
+                                <img src="https://picsum.photos/45" class="border border-primary rounded-circle me-2">
                             </button>
                         </h2>
 
                         <div id="accordion-collapse-1" class="accordion-collapse collapse" aria-labelledby="accordion-header-1">
                             <div class="accordion-body">
-                                <ul class="list-group list-group-flush fs-5 text-start">
-                                    <li class="list-group-item">Fulano</li>
-                                    <li class="list-group-item">Ciclano</li>
-                                    <li class="list-group-item">Beutrano</li>
-                                </ul>
+                                <p>
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta nihil nemo neque tempore. Numquam nulla culpa voluptates perspiciatis ratione doloribus dolorum in fuga, illum, laudantium labore quos natus aut! Magnam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita hic magni quisquam et pariatur culpa ratione neque, quae dicta illo vitae beatae eos a fugit praesentium minus inventore sapiente est. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt cupiditate natus quidem sint rerum eligendi doloremque necessitatibus sunt excepturi. A, repellendus eligendi? Quae at quos alias repellendus illum omnis ut.
+                                </p>
+
+                                <p>
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta nihil nemo neque tempore. Numquam nulla culpa voluptates perspiciatis ratione doloribus dolorum in fuga, illum, laudantium labore quos natus aut! Magnam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita hic magni quisquam et pariatur culpa ratione neque, quae dicta illo vitae beatae eos a fugit praesentium minus inventore sapiente est. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt cupiditate natus quidem sint rerum eligendi doloremque necessitatibus sunt excepturi. A, repellendus eligendi? Quae at quos alias repellendus illum omnis ut.
+                                </p>
                             </div>
                         </div>
                     </div>
 
                     <div class="accordion-item" id="accordion-1">
                         <h2 class="accordion-header" id="accordion-header-2">
-                            <button class="accordion-button collapsed text-light fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-collapse-2" aria-expanded="false" aria-controls="accordion-collapse-2">
-                                2º A - manhã
+                            <button class="accordion-button collapsed fw-bold fs-4 d-flex" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-collapse-2" aria-expanded="false" aria-controls="accordion-collapse-2">
+                                <p class="col">CICLANO</p>
+                                <img src="https://picsum.photos/45" class="border border-primary rounded-circle me-2">
                             </button>
                         </h2>
 
                         <div id="accordion-collapse-2" class="accordion-collapse collapse" aria-labelledby="accordion-header-2">
                             <div class="accordion-body">
-                                <ul class="list-group list-group-flush fs-5 text-start">
-                                    <li class="list-group-item">Fulano</li>
-                                    <li class="list-group-item">Ciclano</li>
-                                    <li class="list-group-item">Beutrano</li>
-                                </ul>
+                                <p>
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta nihil nemo neque tempore. Numquam nulla culpa voluptates perspiciatis ratione doloribus dolorum in fuga, illum, laudantium labore quos natus aut! Magnam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita hic magni quisquam et pariatur culpa ratione neque, quae dicta illo vitae beatae eos a fugit praesentium minus inventore sapiente est. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt cupiditate natus quidem sint rerum eligendi doloremque necessitatibus sunt excepturi. A, repellendus eligendi? Quae at quos alias repellendus illum omnis ut.
+                                </p>
+
+                                <p>
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta nihil nemo neque tempore. Numquam nulla culpa voluptates perspiciatis ratione doloribus dolorum in fuga, illum, laudantium labore quos natus aut! Magnam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita hic magni quisquam et pariatur culpa ratione neque, quae dicta illo vitae beatae eos a fugit praesentium minus inventore sapiente est. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt cupiditate natus quidem sint rerum eligendi doloremque necessitatibus sunt excepturi. A, repellendus eligendi? Quae at quos alias repellendus illum omnis ut.
+                                </p>
                             </div>
                         </div>
                     </div>
 
                     <div class="accordion-item" id="accordion-3">
                         <h2 class="accordion-header" id="accordion-header-3">
-                            <button class="accordion-button collapsed text-light fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-collapse-3" aria-expanded="false" aria-controls="accordion-collapse-3">
-                                3º B - TARDE
+                            <button class="accordion-button collapsed fw-bold fs-4 d-flex" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-collapse-3" aria-expanded="false" aria-controls="accordion-collapse-3">
+                                <p class="col">BEUTRANO</p>
+                                <img src="https://picsum.photos/45" class="border border-primary rounded-circle me-2">
                             </button>
                         </h2>
 
                         <div id="accordion-collapse-3" class="accordion-collapse collapse" aria-labelledby="accordion-header-3">
                             <div class="accordion-body">
-                                <ul class="list-group list-group-flush fs-5 text-start">
-                                    <li class="list-group-item">Fulano</li>
-                                    <li class="list-group-item">Ciclano</li>
-                                    <li class="list-group-item">Beutrano</li>
-                                </ul>
+                                <p>
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta nihil nemo neque tempore. Numquam nulla culpa voluptates perspiciatis ratione doloribus dolorum in fuga, illum, laudantium labore quos natus aut! Magnam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita hic magni quisquam et pariatur culpa ratione neque, quae dicta illo vitae beatae eos a fugit praesentium minus inventore sapiente est. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt cupiditate natus quidem sint rerum eligendi doloremque necessitatibus sunt excepturi. A, repellendus eligendi? Quae at quos alias repellendus illum omnis ut.
+                                </p>
+
+                                <p>
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta nihil nemo neque tempore. Numquam nulla culpa voluptates perspiciatis ratione doloribus dolorum in fuga, illum, laudantium labore quos natus aut! Magnam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita hic magni quisquam et pariatur culpa ratione neque, quae dicta illo vitae beatae eos a fugit praesentium minus inventore sapiente est. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt cupiditate natus quidem sint rerum eligendi doloremque necessitatibus sunt excepturi. A, repellendus eligendi? Quae at quos alias repellendus illum omnis ut.
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
-                
             </main>
         </div>
     </div>
@@ -325,7 +356,6 @@
     }
 
 
-
     /* Tela do(a) professor(a) */
     
     .main-prof {
@@ -337,8 +367,22 @@
     }
 
     .main-prof button:hover {
-        background-color: #00aeb1;
+        background-color: #009092;
     }
+
+    .main-prof .accordion-button {
+        background-color: white;
+        border: 1px solid #00a7aa;
+        color: #00a7aa;
+        transition: .3s;
+    }
+
+    .main-prof .accordion-button:hover {
+        background-color: #00babd4d;
+        color: white;
+        border-color: #00babd4d;
+    }
+
     
     /* ESTILIZAÇÃO DO MENÚ RESPONSIVO */
     
