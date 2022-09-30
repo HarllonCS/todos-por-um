@@ -314,62 +314,190 @@
                 </div>
             </div> <!-- /fim Modal -->
 
-            <main role="main">
-                <!-- Tabela de alunos acadastrados (pais ou responsáveis) -->
-                <table class="table table-striped table-bordered table-hover w-75 mx-auto text-center shadow">
-                    <!-- Cabeçalho da tabela -->
-                    <thead class="bg-table-thead text-light">
-                        <th scope="col">ID</th>
-                        <th scope="col">NOME</th>
-                        <th scope="col">TURMA</th>
-                        <th scope="col">TURNO</th>
-                        <th scope="col"></th>
-                    </thead> <!-- /fim do Cabeçalho da tabela -->
+            <main role="main" >
+                <div class="overflow-auto w-75 mx-auto shadow" style="height: 27.5vh;">
+                    <!-- Tabela de alunos acadastrados (pais ou responsáveis) -->
+                    <table class="table table-striped table-bordered table-hover mx-auto text-center">
+                        <!-- Cabeçalho da tabela -->
+                        <thead class="bg-table-thead text-light">
+                            <th scope="col">ID</th>
+                            <th scope="col">NOME</th>
+                            <th scope="col">TURMA</th>
+                            <th scope="col">TURNO</th>
+                            <th scope="col"></th>
+                        </thead> <!-- /fim do Cabeçalho da tabela -->
 
-                    <tbody> <!-- Corpo da tabela -->
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>Fulano</td>
-                            <td>1º A</td>
-                            <td>Tarde</td>
-                            <td>
-                                <div class="d-flex justify-content-around">
-                                    <span class="material-icons" title="Editar" type="button" data-bs-target="#editModal" data-bs-toggle="modal">edit</span>
+                        <tbody> <!-- Corpo da tabela -->
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Fulano</td>
+                                <td>1º A</td>
+                                <td>Tarde</td>
+                                <td>
+                                    <div class="d-flex justify-content-around">
+                                                <span class="material-icons" title="Editar" type="button" data-bs-target="#editModal" data-bs-toggle="modal">edit</span>
 
-                                    <span class="material-icons" title="Deletar">delete</span>
-                                </div>
-                            </td>
-                        </tr>
+                                                <span class="material-icons" title="Deletar">delete</span>
+                                    </div>
+                                </td>
+                            </tr>
 
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>Ciclano</td>
-                            <td>2º B</td>
-                            <td>Manhã</td>
-                            <td>
-                                <div class="d-flex justify-content-around">
-                                    <span class="material-icons" title="Editar" type="button" data-bs-target="#editModal" data-bs-toggle="modal">edit</span>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Ciclano</td>
+                                <td>2º B</td>
+                                <td>Manhã</td>
+                                <td>
+                                    <div class="d-flex justify-content-around">
+                                        <span class="material-icons" title="Editar" type="button" data-bs-target="#editModal" data-bs-toggle="modal">edit</span>
 
-                                    <span class="material-icons" title="Deletar">delete</span>
-                                </div>
-                            </td>
-                        </tr>
+                                        <span class="material-icons" title="Deletar">delete</span>
+                                    </div>
+                                </td>
+                            </tr>
 
-                        <tr>
-                            <th scope="row">3</th>
-                            <td>Beutrano</td>
-                            <td>3º A</td>
-                            <td>Integral</td>
-                            <td>
-                                <div class="d-flex justify-content-around">
-                                    <span class="material-icons" title="Editar" type="button" data-bs-target="#editModal" data-bs-toggle="modal">edit</span>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Beutrano</td>
+                                <td>3º A</td>
+                                <td>Integral</td>
+                                <td>
+                                    <div class="d-flex justify-content-around">
+                                            <span class="material-icons" title="Editar" type="button" data-bs-target="#editModal" data-bs-toggle="modal">edit</span>
 
-                                    <span class="material-icons" title="Deletar">delete</span>
-                                </div>
-                            </td>
-                        </tr>
-                    </tbody> <!-- /fim Corpo da tabela -->
-                </table>  <!-- /fim Tabela -->
+                                            <span class="material-icons" title="Deletar">delete</span>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row">4</th>
+                                <td>Zé da Uva</td>
+                                <td>4º A</td>
+                                <td>Integral</td>
+                                <td>
+                                    <div class="d-flex justify-content-around">
+                                        <span class="material-icons" title="Editar" type="button" data-bs-target="#editModal" data-bs-toggle="modal">edit</span>
+
+                                        <span class="material-icons" title="Deletar">delete</span>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row">5</th>
+                                <td>Maracujá</td>
+                                <td>3º A</td>
+                                <td>Integral</td>
+                                <td>
+                                    <div class="d-flex justify-content-around">
+                                        <span class="material-icons" title="Editar" type="button" data-bs-target="#editModal" data-bs-toggle="modal">edit</span>
+
+                                        <span class="material-icons" title="Deletar">delete</span>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row">6</th>
+                                <td>Roliço</td>
+                                <td>3º A</td>
+                                <td>Integral</td>
+                                <td>
+                                    <div class="d-flex justify-content-around">
+                                        <span class="material-icons" title="Editar" type="button" data-bs-target="#editModal" data-bs-toggle="modal">edit</span>
+
+                                        <span class="material-icons" title="Deletar">delete</span>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row">7</th>
+                                <td>Anão</td>
+                                <td>1º A</td>
+                                <td>Tarde</td>
+                                <td>
+                                    <div class="d-flex justify-content-around">
+                                        <span class="material-icons" title="Editar" type="button" data-bs-target="#editModal" data-bs-toggle="modal">edit</span>
+
+                                        <span class="material-icons" title="Deletar">delete</span>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row">8</th>
+                                <td>Beyblade</td>
+                                <td>2º B</td>
+                                <td>Manhã</td>
+                                <td>
+                                    <div class="d-flex justify-content-around">
+                                        <span class="material-icons" title="Editar" type="button" data-bs-target="#editModal" data-bs-toggle="modal">edit</span>
+
+                                        <span class="material-icons" title="Deletar">delete</span>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row">9</th>
+                                <td>Juju</td>
+                                <td>3º A</td>
+                                <td>Integral</td>
+                                <td>
+                                    <div class="d-flex justify-content-around">
+                                        <span class="material-icons" title="Editar" type="button" data-bs-target="#editModal" data-bs-toggle="modal">edit</span>
+
+                                        <span class="material-icons" title="Deletar">delete</span>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row">10</th>
+                                <td>Engraçadinha</td>
+                                <td>3º A</td>
+                                <td>Integral</td>
+                                <td>
+                                    <div class="d-flex justify-content-around">
+                                        <span class="material-icons" title="Editar" type="button" data-bs-target="#editModal" data-bs-toggle="modal">edit</span>
+
+                                        <span class="material-icons" title="Deletar">delete</span>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row">11</th>
+                                <td>Alexius</td>
+                                <td>4º B</td>
+                                <td>Integral</td>
+                                <td>
+                                    <div class="d-flex justify-content-around">
+                                        <span class="material-icons" title="Editar" type="button" data-bs-target="#editModal" data-bs-toggle="modal">edit</span>
+
+                                        <span class="material-icons" title="Deletar">delete</span>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row">12</th>
+                                <td>Careca</td>
+                                <td>4º B</td>
+                                <td>Integral</td>
+                                <td>
+                                    <div class="d-flex justify-content-around">
+                                        <span class="material-icons" title="Editar" type="button" data-bs-target="#editModal" data-bs-toggle="modal">edit</span>
+
+                                        <span class="material-icons" title="Deletar">delete</span>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody> <!-- /fim Corpo da tabela -->
+                    </table>  <!-- /fim Tabela -->
+                </div>
             </main>
 
             <div class="modal fade" id="editModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true" aria-labelledby="tabelaModal">
