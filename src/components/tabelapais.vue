@@ -51,8 +51,8 @@
 
             <!-- Modal -->
             <div class="modal fade" id="alunoCadastro" tabindex="-1" aria-labelledby="labelEstatico" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
-                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-                    <div class="modal-content mx-auto">
+                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable mx-auto">
+                    <div class="modal-content">
                         <!-- Cabeçalho do Modal -->
                         <div class="modal-header">
                             <!-- Título -->
@@ -314,190 +314,188 @@
                 </div>
             </div> <!-- /fim Modal -->
 
-            <main role="main" >
-                <div class="overflow-auto w-75 mx-auto shadow" style="height: 27.5vh;">
-                    <!-- Tabela de alunos acadastrados (pais ou responsáveis) -->
-                    <table class="table table-striped table-bordered table-hover mx-auto text-center">
-                        <!-- Cabeçalho da tabela -->
-                        <thead class="bg-table-thead text-light">
-                            <th scope="col">ID</th>
-                            <th scope="col">NOME</th>
-                            <th scope="col">TURMA</th>
-                            <th scope="col">TURNO</th>
-                            <th scope="col"></th>
-                        </thead> <!-- /fim do Cabeçalho da tabela -->
+            <main role="main" class="overflow-auto mx-auto">
+                <!-- Tabela de alunos acadastrados (pais ou responsáveis) -->
+                <table class="table table-striped table-bordered table-hover text-center">
+                    <!-- Cabeçalho da tabela -->
+                    <thead class="bg-table-thead text-light">
+                        <th scope="col">ID</th>
+                        <th scope="col">NOME</th>
+                        <th scope="col">TURMA</th>
+                        <th scope="col">TURNO</th>
+                        <th scope="col"></th>
+                    </thead> <!-- /fim do Cabeçalho da tabela -->
 
-                        <tbody> <!-- Corpo da tabela -->
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Fulano</td>
-                                <td>1º A</td>
-                                <td>Tarde</td>
-                                <td>
-                                    <div class="d-flex justify-content-around">
-                                                <span class="material-icons" title="Editar" type="button" data-bs-target="#editModal" data-bs-toggle="modal">edit</span>
+                    <tbody> <!-- Corpo da tabela -->
+                        <tr>
+                            <td>1</td>
+                            <td>Fulano</td>
+                            <td>1º A</td>
+                            <td>Tarde</td>
+                            <td>
+                                <div class="d-flex justify-content-around">
+                                    <span class="material-icons" title="Editar" type="button" data-bs-target="#editModal" data-bs-toggle="modal">edit</span>
 
-                                                <span class="material-icons" title="Deletar">delete</span>
-                                    </div>
-                                </td>
-                            </tr>
+                                    <span class="material-icons" title="Deletar">delete</span>
+                                </div>
+                            </td>
+                        </tr>
 
-                            <tr>
-                                <th scope="row">2</th>
-                                <td>Ciclano</td>
-                                <td>2º B</td>
-                                <td>Manhã</td>
-                                <td>
-                                    <div class="d-flex justify-content-around">
-                                        <span class="material-icons" title="Editar" type="button" data-bs-target="#editModal" data-bs-toggle="modal">edit</span>
+                        <tr>
+                            <td>2</td>
+                            <td>Ciclano</td>
+                            <td>2º B</td>
+                            <td>Manhã</td>
+                            <td>
+                                <div class="d-flex justify-content-around">
+                                    <span class="material-icons" title="Editar" type="button" data-bs-target="#editModal" data-bs-toggle="modal">edit</span>
 
-                                        <span class="material-icons" title="Deletar">delete</span>
-                                    </div>
-                                </td>
-                            </tr>
+                                    <span class="material-icons" title="Deletar">delete</span>
+                                </div>
+                            </td>
+                        </tr>
 
-                            <tr>
-                                <th scope="row">3</th>
-                                <td>Beutrano</td>
-                                <td>3º A</td>
-                                <td>Integral</td>
-                                <td>
-                                    <div class="d-flex justify-content-around">
-                                            <span class="material-icons" title="Editar" type="button" data-bs-target="#editModal" data-bs-toggle="modal">edit</span>
+                        <tr>
+                            <td>3</td>
+                            <td>Beutrano</td>
+                            <td>3º A</td>
+                            <td>Integral</td>
+                            <td>
+                                <div class="d-flex justify-content-around">
+                                    <span class="material-icons" title="Editar" type="button" data-bs-target="#editModal" data-bs-toggle="modal">edit</span>
 
-                                            <span class="material-icons" title="Deletar">delete</span>
-                                    </div>
-                                </td>
-                            </tr>
+                                    <span class="material-icons" title="Deletar">delete</span>
+                                </div>
+                            </td>
+                        </tr>
 
-                            <tr>
-                                <th scope="row">4</th>
-                                <td>Zé da Uva</td>
-                                <td>4º A</td>
-                                <td>Integral</td>
-                                <td>
-                                    <div class="d-flex justify-content-around">
-                                        <span class="material-icons" title="Editar" type="button" data-bs-target="#editModal" data-bs-toggle="modal">edit</span>
+                        <tr>
+                            <td>4</td>
+                            <td>Zé da Uva</td>
+                            <td>4º A</td>
+                            <td>Integral</td>
+                            <td>
+                                <div class="d-flex justify-content-around">
+                                    <span class="material-icons" title="Editar" type="button" data-bs-target="#editModal" data-bs-toggle="modal">edit</span>
 
-                                        <span class="material-icons" title="Deletar">delete</span>
-                                    </div>
-                                </td>
-                            </tr>
+                                    <span class="material-icons" title="Deletar">delete</span>
+                                </div>
+                            </td>
+                        </tr>
 
-                            <tr>
-                                <th scope="row">5</th>
-                                <td>Maracujá</td>
-                                <td>3º A</td>
-                                <td>Integral</td>
-                                <td>
-                                    <div class="d-flex justify-content-around">
-                                        <span class="material-icons" title="Editar" type="button" data-bs-target="#editModal" data-bs-toggle="modal">edit</span>
+                        <tr>
+                            <td>5</td>
+                            <td>Maracujá</td>
+                            <td>3º A</td>
+                            <td>Integral</td>
+                            <td>
+                                <div class="d-flex justify-content-around">
+                                    <span class="material-icons" title="Editar" type="button" data-bs-target="#editModal" data-bs-toggle="modal">edit</span>
 
-                                        <span class="material-icons" title="Deletar">delete</span>
-                                    </div>
-                                </td>
-                            </tr>
+                                    <span class="material-icons" title="Deletar">delete</span>
+                                </div>
+                            </td>
+                        </tr>
 
-                            <tr>
-                                <th scope="row">6</th>
-                                <td>Roliço</td>
-                                <td>3º A</td>
-                                <td>Integral</td>
-                                <td>
-                                    <div class="d-flex justify-content-around">
-                                        <span class="material-icons" title="Editar" type="button" data-bs-target="#editModal" data-bs-toggle="modal">edit</span>
+                        <tr>
+                            <td>6</td>
+                            <td>Roliço</td>
+                            <td>3º A</td>
+                            <td>Integral</td>
+                            <td>
+                                <div class="d-flex justify-content-around">
+                                    <span class="material-icons" title="Editar" type="button" data-bs-target="#editModal" data-bs-toggle="modal">edit</span>
 
-                                        <span class="material-icons" title="Deletar">delete</span>
-                                    </div>
-                                </td>
-                            </tr>
+                                    <span class="material-icons" title="Deletar">delete</span>
+                                </div>
+                            </td>
+                        </tr>
 
-                            <tr>
-                                <th scope="row">7</th>
-                                <td>Anão</td>
-                                <td>1º A</td>
-                                <td>Tarde</td>
-                                <td>
-                                    <div class="d-flex justify-content-around">
-                                        <span class="material-icons" title="Editar" type="button" data-bs-target="#editModal" data-bs-toggle="modal">edit</span>
+                        <tr>
+                            <td>7</td>
+                            <td>Anão</td>
+                            <td>1º A</td>
+                            <td>Tarde</td>
+                            <td>
+                                <div class="d-flex justify-content-around">
+                                    <span class="material-icons" title="Editar" type="button" data-bs-target="#editModal" data-bs-toggle="modal">edit</span>
 
-                                        <span class="material-icons" title="Deletar">delete</span>
-                                    </div>
-                                </td>
-                            </tr>
+                                    <span class="material-icons" title="Deletar">delete</span>
+                                </div>
+                            </td>
+                        </tr>
 
-                            <tr>
-                                <th scope="row">8</th>
-                                <td>Beyblade</td>
-                                <td>2º B</td>
-                                <td>Manhã</td>
-                                <td>
-                                    <div class="d-flex justify-content-around">
-                                        <span class="material-icons" title="Editar" type="button" data-bs-target="#editModal" data-bs-toggle="modal">edit</span>
+                        <tr>
+                            <td>8</td>
+                            <td>Beyblade</td>
+                            <td>2º B</td>
+                            <td>Manhã</td>
+                            <td>
+                                <div class="d-flex justify-content-around">
+                                    <span class="material-icons" title="Editar" type="button" data-bs-target="#editModal" data-bs-toggle="modal">edit</span>
 
-                                        <span class="material-icons" title="Deletar">delete</span>
-                                    </div>
-                                </td>
-                            </tr>
+                                    <span class="material-icons" title="Deletar">delete</span>
+                                </div>
+                            </td>
+                        </tr>
 
-                            <tr>
-                                <th scope="row">9</th>
-                                <td>Juju</td>
-                                <td>3º A</td>
-                                <td>Integral</td>
-                                <td>
-                                    <div class="d-flex justify-content-around">
-                                        <span class="material-icons" title="Editar" type="button" data-bs-target="#editModal" data-bs-toggle="modal">edit</span>
+                        <tr>
+                            <td>9</td>
+                            <td>Juju</td>
+                            <td>3º A</td>
+                            <td>Integral</td>
+                            <td>
+                                <div class="d-flex justify-content-around">
+                                    <span class="material-icons" title="Editar" type="button" data-bs-target="#editModal" data-bs-toggle="modal">edit</span>
 
-                                        <span class="material-icons" title="Deletar">delete</span>
-                                    </div>
-                                </td>
-                            </tr>
+                                    <span class="material-icons" title="Deletar">delete</span>
+                                </div>
+                            </td>
+                        </tr>
 
-                            <tr>
-                                <th scope="row">10</th>
-                                <td>Engraçadinha</td>
-                                <td>3º A</td>
-                                <td>Integral</td>
-                                <td>
-                                    <div class="d-flex justify-content-around">
-                                        <span class="material-icons" title="Editar" type="button" data-bs-target="#editModal" data-bs-toggle="modal">edit</span>
+                        <tr>
+                            <td>10</td>
+                            <td>Engraçadinha</td>
+                            <td>3º A</td>
+                            <td>Integral</td>
+                            <td>
+                                <div class="d-flex justify-content-around">
+                                    <span class="material-icons" title="Editar" type="button" data-bs-target="#editModal" data-bs-toggle="modal">edit</span>
 
-                                        <span class="material-icons" title="Deletar">delete</span>
-                                    </div>
-                                </td>
-                            </tr>
+                                    <span class="material-icons" title="Deletar">delete</span>
+                                </div>
+                            </td>
+                        </tr>
 
-                            <tr>
-                                <th scope="row">11</th>
-                                <td>Alexius</td>
-                                <td>4º B</td>
-                                <td>Integral</td>
-                                <td>
-                                    <div class="d-flex justify-content-around">
-                                        <span class="material-icons" title="Editar" type="button" data-bs-target="#editModal" data-bs-toggle="modal">edit</span>
+                        <tr>
+                            <td>11</td>
+                            <td>Alexius</td>
+                            <td>4º B</td>
+                            <td>Integral</td>
+                            <td>
+                                <div class="d-flex justify-content-around">
+                                    <span class="material-icons" title="Editar" type="button" data-bs-target="#editModal" data-bs-toggle="modal">edit</span>
 
-                                        <span class="material-icons" title="Deletar">delete</span>
-                                    </div>
-                                </td>
-                            </tr>
+                                    <span class="material-icons" title="Deletar">delete</span>
+                                </div>
+                            </td>
+                        </tr>
 
-                            <tr>
-                                <th scope="row">12</th>
-                                <td>Careca</td>
-                                <td>4º B</td>
-                                <td>Integral</td>
-                                <td>
-                                    <div class="d-flex justify-content-around">
-                                        <span class="material-icons" title="Editar" type="button" data-bs-target="#editModal" data-bs-toggle="modal">edit</span>
+                        <tr>
+                            <td>12</td>
+                            <td>Careca</td>
+                            <td>4º B</td>
+                            <td>Integral</td>
+                            <td>
+                                <div class="d-flex justify-content-around">
+                                    <span class="material-icons" title="Editar" type="button" data-bs-target="#editModal" data-bs-toggle="modal">edit</span>
 
-                                        <span class="material-icons" title="Deletar">delete</span>
-                                    </div>
-                                </td>
-                            </tr>
-                        </tbody> <!-- /fim Corpo da tabela -->
-                    </table>  <!-- /fim Tabela -->
-                </div>
+                                    <span class="material-icons" title="Deletar">delete</span>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody> <!-- /fim Corpo da tabela -->
+                </table>  <!-- /fim Tabela -->
             </main>
 
             <div class="modal fade" id="editModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-hidden="true" aria-labelledby="tabelaModal">
@@ -810,6 +808,10 @@
     .navbar-brand a {
         text-decoration: none;
     }
+
+    .navbar-brand span {
+        color: #00a7aa;
+    }
     
     
     /* Menu de navegação */
@@ -832,91 +834,7 @@
     .ativo {
         cursor: auto;
     }
-    
-    /* Formatação da tela de login */
-    
-    main {
-        justify-content: space-between;
-        margin-top: 2vw;
-    }
-    
-    /* Textos e inputs */
-    
-    aside {
-        width: 30vw;
-        padding: 2vw;
-        border-radius: 10px;
-    }
-    
-    aside h2 {
-        font-size: 3.2vw;
-        line-height: 3.3vw;
-        font-family: 'poppinsmedium';
-    }
-    
-    aside span, .navbar-brand span {
-        color: #00a7aa;
-    }
-    
-    /*
-    aside p {
-        line-height: 1.3vw;
-        font-family: 'poppinslight';
-        font-size: .9vw;
-    }
-    */
-    
-    /* Formatação dos campos (inputs) */
-    
-    .login-inputs {
-        flex-direction: column;
-        font-size: .9vw;
-    }
-    
-    aside [type="email"], aside [type="password"] {
-        margin-top: 1.2vw;
-        padding: 1vw;
-        border-radius: 20px;
-        border: 1px solid #e6e6e6;
-    }
-    
-    /* Botões */
-    
-    .login-btn {
-        margin-top: 2.5vw;
-        font-size: .9vw;
-        justify-content: space-between;
-    }
-    
-    .login-btn input {
-        padding: .8vw 2vw;
-        background-color: #00a7aa;
-        border-radius: 30px;
-        transition: .3s;
-    }
-    
-    .login-btn input:hover {
-        background-color: #00c0c4;
-    }
-    
-    .login-btn a {
-        color: #00a7aa;
-        margin-top: .8vw;
-        text-decoration: none;
-    }
-    
-    .login-btn a:hover {
-        text-decoration: underline;
-        color: #008183;
-        text-decoration-thickness: 1.5px;
-    }
-    
-    /* Imagem animada */
-    
-    article img {
-        width: 28vw;
-    }
-    
+
     
     /* Modal */
     
@@ -928,9 +846,20 @@
     .modal-dialog {
         max-width: 35vw;
     }
+
+    .modal-footer button {
+        width: 17vw;
+        font-size: 1vw;
+    }
+
     
     /* Tabela */
-    
+
+    main {
+        height: 49.7vh;
+        box-shadow: 0px 10px 13px 2px rgba(0, 0, 0, 0.274);
+    }
+
     table {
         font-size: 1vw;
     }
@@ -954,16 +883,15 @@
         background-color: #00a7aa;
     }
     
-    .modal-footer button {
-        width: 17vw;
-        font-size: 1vw;
-    }
     
-    
-    /* ESTILIZAÇÃO DO MENÚ RESPONSIVO */
+    /* ESTILIZAÇÃO RESPONSIVA */
     
     @media (max-width: 991.98px) {
     
+        .cont {
+            width: 95vw;
+        }
+
         /* Título "Todos Por Um" */
     
         .navbar-brand h1 {
@@ -992,95 +920,53 @@
             font-size: 5vw;
         }
     
-        aside {
-            width: 100%;
-        }
+
+        /* Modal de cadastro dos alunos*/
     
-        aside h2 {
-            font-size: 8vw;
-            text-align: center;
-            line-height: 9vw;
-        }
-    
-        /*
-        aside p {
-            line-height: 3.8vw;
-            font-size: 2.5vw;
-        }
-        */
-    
-        .login-inputs {
-            font-size: 4vw;
-            margin-top: 2vw;
-        }
-    
-        aside input[type="email"], aside input[type="password"] {
-            padding: 3vw;
-            margin-top: 4vw;
-        }
-    
-        /* Botões */
-    
-        .login-btn {
-            flex-direction: column;
-        }
-    
-        /* Botão de "ENTRAR" */
-    
-        .login-btn input {
-            padding: 1.5vw 1vw;
-            font-size: 5vw;
-            margin-top: 4vw;
-        }
-    
-        /* Link para Cadastrar */
-    
-        .login-btn a {
-            margin: 6vw auto 0 auto;
-            font-size: 4vw;
-        }
-    
-        /* Imagem animada não aparece */
-    
-        img {
-            display: none;
-        }
-    
-    
-        /* Modal de cadastro dos pais */
-    
-        .modal-content {
-            width: 90vw;
+        .modal-dialog {
+            max-width: 85vw;
             box-shadow: none;
         }
     
         .modal-body p {
-            font-size: 3vw;
+            font-size: 5vw;
         }
-    
-        .def-fisica, .def-intel {
-            font-size: 3.5vw;
+
+        label {
+            font-size: 4vw;
         }
     
         .modal-footer button {
-            font-size: 3.5vw;
-            width: 65vw;
+            font-size: 6vw;
         }
     
         .coluna {
             flex-direction: column;
         }
-    
-        /* Modal do cadastro do aluno */
-    
-        .modal-content {
-            width: 85vw;
-        }
+        
+
+        /* Botão da tabela */
     
         .table-btn {
             display: block;
-            font-size: 3.2vw;
             margin: auto;
+            margin-bottom: 10vw;
+        }
+
+
+        /* Tabela */
+
+        main {
+            box-shadow: none;
+            width: 98%;
+        }
+
+        thead {
+            font-size: 4vw;
+        }
+
+        table {
+            font-size: 3.6vw;
         }
     }
 </style>

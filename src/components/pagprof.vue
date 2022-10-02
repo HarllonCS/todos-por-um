@@ -44,9 +44,9 @@
                 </nav> <!-- /fim Menu -->
             </header> <!-- /fim Cabeçalho -->
 
-            <p class="float-end fs-3">Prof. Nome</p>
+            <p class="text-end prof-nome">Prof. Nome</p>
 
-            <main role="main" class="main-prof">
+            <main role="main">
                 <!--
                 <div class="d-grid gap-2 col-6 mx-auto">
                     <button type="button" class="btn text-light fw-bold fs-4">
@@ -64,10 +64,10 @@
 
                 <p class="fs-1 fw-bold text-uppercase">1º ano - A</p>
 
-                <div id="acordeao" class="accordion overflow-auto w-50 mx-auto border border-2 rounded" style="height: 22.6vw;">
+                <div id="acordeao" class="accordion overflow-auto mx-auto border border-2 rounded">
                     <div class="accordion-item" id="accordion-1">
                         <h2 class="accordion-header" id="accordion-header-1">
-                            <button class="accordion-button collapsed fw-bold fs-4 d-flex" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-collapse-1" aria-expanded="false" aria-controls="accordion-collapse-1">
+                            <button class="accordion-button collapsed fw-bold d-flex" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-collapse-1" aria-expanded="false" aria-controls="accordion-collapse-1">
                                 <p class="col">FULANO</p>
                                     
                                 <span class="material-icons fs-1 me-3">all_inclusive</span>
@@ -91,7 +91,7 @@
 
                     <div class="accordion-item" id="accordion-1">
                         <h2 class="accordion-header" id="accordion-header-2">
-                            <button class="accordion-button collapsed fw-bold fs-4 d-flex" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-collapse-2" aria-expanded="false" aria-controls="accordion-collapse-2">
+                            <button class="accordion-button collapsed fw-bold d-flex" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-collapse-2" aria-expanded="false" aria-controls="accordion-collapse-2">
                                 <p class="col">CICLANO</p>
                                 <img src="https://picsum.photos/45" class="border border-info rounded-circle me-2">
                             </button>
@@ -112,7 +112,7 @@
 
                     <div class="accordion-item" id="accordion-3">
                         <h2 class="accordion-header" id="accordion-header-3">
-                            <button class="accordion-button collapsed fw-bold fs-4 d-flex" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-collapse-3" aria-expanded="false" aria-controls="accordion-collapse-3">
+                            <button class="accordion-button collapsed fw-bold d-flex" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-collapse-3" aria-expanded="false" aria-controls="accordion-collapse-3">
                                 <p class="col">BEUTRANO</p>
                                 <img src="https://picsum.photos/45" class="border border-info rounded-circle me-2">
                             </button>
@@ -133,7 +133,7 @@
 
                     <div class="accordion-item" id="accordion-4">
                         <h2 class="accordion-header" id="accordion-header-4">
-                            <button class="accordion-button collapsed fw-bold fs-4 d-flex" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-collapse-4" aria-expanded="false" aria-controls="accordion-collapse-4">
+                            <button class="accordion-button collapsed fw-bold d-flex" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-collapse-4" aria-expanded="false" aria-controls="accordion-collapse-4">
                                 <p class="col">REBOCO DE PAREDE</p>
 
                                 <span class="material-icons fs-1 me-3">all_inclusive</span>
@@ -157,7 +157,8 @@
 
                     <div class="accordion-item" id="accordion-5">
                         <h2 class="accordion-header" id="accordion-header-5">
-                            <button class="accordion-button collapsed fw-bold fs-4 d-flex" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-collapse-5" aria-expanded="false" aria-controls="accordion-collapse-5">
+                            <button class="accordion-button collapsed fw-bold
+                            d-flex" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-collapse-5" aria-expanded="false" aria-controls="accordion-collapse-5">
                                 <p class="col">DEBILOIDE</p>
                                 <img src="https://picsum.photos/45" class="border border-info rounded-circle me-2">
                             </button>
@@ -178,7 +179,7 @@
 
                     <div class="accordion-item" id="accordion-6">
                         <h2 class="accordion-header" id="accordion-header-6">
-                            <button class="accordion-button collapsed fw-bold fs-4 d-flex" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-collapse-6" aria-expanded="false" aria-controls="accordion-collapse-6">
+                            <button class="accordion-button collapsed fw-bold d-flex" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-collapse-6" aria-expanded="false" aria-controls="accordion-collapse-6">
                                 <p class="col">PEDRINHO BIGODE</p>
 
                                 <span class="material-icons fs-1 me-3">all_inclusive</span>
@@ -202,7 +203,7 @@
 
                     <div class="accordion-item" id="accordion-8">
                         <h2 class="accordion-header" id="accordion-header-8">
-                            <button class="accordion-button collapsed fw-bold fs-4 d-flex" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-collapse-8" aria-expanded="false" aria-controls="accordion-collapse-8">
+                            <button class="accordion-button collapsed fw-bold d-flex" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-collapse-8" aria-expanded="false" aria-controls="accordion-collapse-8">
                                 <p class="col">CARA DE PERCATA</p>
                                 <img src="https://picsum.photos/45" class="border border-info rounded-circle me-2">
                             </button>
@@ -223,7 +224,7 @@
 
                     <div class="accordion-item" id="accordion-9">
                         <h2 class="accordion-header" id="accordion-header-9">
-                            <button class="accordion-button collapsed fw-bold fs-4 d-flex" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-collapse-9" aria-expanded="false" aria-controls="accordion-collapse-9">
+                            <button class="accordion-button collapsed fw-bold d-flex" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-collapse-9" aria-expanded="false" aria-controls="accordion-collapse-9">
                                 <p class="col">JOÃO CACHAÇA</p>
                                 <img src="https://picsum.photos/45" class="border border-info rounded-circle me-2">
                             </button>
@@ -323,6 +324,10 @@
     .navbar-brand a {
         text-decoration: none;
     }
+
+    .navbar-brand span {
+        color: #00a7aa;
+    }
     
     
     /* Menu de navegação */
@@ -338,155 +343,46 @@
         transition: .3s;
     }
     
-    .nav-link:hover, .ativo {
+    .nav-link:hover {
         color: #00a7aa;
     }
     
-    .ativo {
-        cursor: auto;
-    }
-    
-    /* Formatação da tela de login */
-    
-    main {
-        justify-content: space-between;
-        margin-top: 2vw;
-    }
-    
-    /* Textos e inputs */
-    
-    aside {
-        width: 30vw;
-        padding: 2vw;
-        border-radius: 10px;
-    }
-    
-    aside h2 {
-        font-size: 3.2vw;
-        line-height: 3.3vw;
-        font-family: 'poppinsmedium';
-    }
-    
-    aside span, .navbar-brand span {
-        color: #00a7aa;
-    }
-    
-    /*
-    aside p {
-        line-height: 1.3vw;
-        font-family: 'poppinslight';
-        font-size: .9vw;
-    }
-    */
-    
-    /* Formatação dos campos (inputs) */
-    
-    .login-inputs {
-        flex-direction: column;
-        font-size: .9vw;
-    }
-    
-    aside [type="email"], aside [type="password"] {
-        margin-top: 1.2vw;
-        padding: 1vw;
-        border-radius: 20px;
-        border: 1px solid #e6e6e6;
-    }
-    
-    /* Botões */
-    
-    .login-btn {
-        margin-top: 2.5vw;
-        font-size: .9vw;
-        justify-content: space-between;
-    }
-    
-    .login-btn input {
-        padding: .8vw 2vw;
-        background-color: #00a7aa;
-        border-radius: 30px;
-        transition: .3s;
-    }
-    
-    .login-btn input:hover {
-        background-color: #00c0c4;
-    }
-    
-    .login-btn a {
-        color: #00a7aa;
-        margin-top: .8vw;
-        text-decoration: none;
-    }
-    
-    .login-btn a:hover {
-        text-decoration: underline;
-        color: #008183;
-        text-decoration-thickness: 1.5px;
-    }
-    
-    /* Imagem animada */
-    
-    article img {
-        width: 28vw;
-    }
-    
-    
-    /* Modal */
-    
-    .modal-content {
-        box-shadow: 1px 1px 12px 6px rgba(0, 0, 0, 0.274);
-    }
-    
-    .modal-content {
-        text-align: start;
-    }
-    
-    
-    /* Tabela dos pais */
-    
-    .table-btn {
-        margin-left: 60vw;
-        cursor: pointer;
-        background-color: #00a7aa;
-        transition: .3s;
-    }
-    
-    .table-btn:hover {
-        background-color: #019092;
-    }
-    
-    .bg-table-thead {
-        background-color: #00a7aa;
-    }
-    
-    .modal-footer button {
-        width: 17vw;
-        font-size: 1vw;
+    .prof-nome {
+        font-size: 1.2vw;
     }
 
 
     /* Tela do(a) professor(a) */
-    
-    .main-prof {
-        margin-top: 8vw;
+
+    main {
+        margin-top: 6vw;
     }
 
-    .main-prof button {
+    .accordion {
+        width: 50%;
+        height: 45.3vh;
+    }
+
+    button {
         background-color: #00a7aa;
     }
 
-    .main-prof button:hover {
+    button:hover {
         background-color: #009092;
     }
 
-    .main-prof .accordion-button {
+    .accordion-header button {
+        font-size: 1.3vw;
+    }
+
+    main .accordion-button {
         background-color: white;
         border: 1px solid #00a7aa;
         color: #00a7aa;
         transition: .3s;
     }
 
-    .main-prof .accordion-button:hover {
+    .accordion-button:hover {
         background-color: #00babd4d;
         color: white;
         border-color: #00babd4d;
@@ -497,6 +393,10 @@
     
     @media (max-width: 991.98px) {
     
+        .cont {
+            width: 95vw;
+        }
+
         /* Título "Todos Por Um" */
     
         .navbar-brand h1 {
@@ -524,100 +424,28 @@
         .nav-link {
             font-size: 5vw;
         }
-    
-        aside {
-            width: 100%;
+
+        
+        /* Nome do(a) professor(a) */
+
+        .prof-nome {
+            font-size: 6.5vw;
         }
-    
-        aside h2 {
-            font-size: 8vw;
-            text-align: center;
-            line-height: 9vw;
+
+
+        /* Accordion */
+
+        .accordion {
+            width: 90%;
+            height: 57.2vh;
         }
-    
-        /*
-        aside p {
-            line-height: 3.8vw;
-            font-size: 2.5vw;
-        }
-        */
-    
-        .login-inputs {
-            font-size: 4vw;
-            margin-top: 2vw;
-        }
-    
-        aside input[type="email"], aside input[type="password"] {
-            padding: 3vw;
-            margin-top: 4vw;
-        }
-    
-        /* Botões */
-    
-        .login-btn {
-            flex-direction: column;
-        }
-    
-        /* Botão de "ENTRAR" */
-    
-        .login-btn input {
-            padding: 1.5vw 1vw;
+
+        .accordion-header button {
             font-size: 5vw;
-            margin-top: 4vw;
         }
-    
-        /* Link para Cadastrar */
-    
-        .login-btn a {
-            margin: 6vw auto 0 auto;
-            font-size: 4vw;
-        }
-    
-        /* Imagem animada não aparece */
-    
-        img {
-            display: none;
-        }
-    
-    
-        /* Modal de cadastro dos pais */
-    
-        .modal-content {
-            width: 90vw;
-            box-shadow: none;
-        }
-    
-        .modal-body p {
-            font-size: 3vw;
-        }
-    
-        .def-fisica, .def-intel {
-            font-size: 3.5vw;
-        }
-    
-        .modal-footer button {
-            font-size: 3.5vw;
-            width: 65vw;
-        }
-    
-        .tamanho-input-modal {
-            width: 100%;
-        }
-    
-        .coluna {
-            flex-direction: column;
-        }
-    
-        /* Modal do cadastro do aluno */
-    
-        .modal-content {
-            width: 85vw;
-        }
-    
-        .table-btn {
-            display: block;
-            font-size: 3.2vw;
-            margin: auto;
+
+        .accordion img {
+            width: 10vw;
         }
     }
 </style>

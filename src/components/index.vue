@@ -366,7 +366,7 @@ aside h2 {
     font-family: 'poppinsmedium';
 }
 
-aside span, .navbar-brand span {
+span {
     color: #00a7aa;
 }
 
@@ -392,7 +392,7 @@ aside [type="email"], aside [type="password"] {
     border: 1px solid #e6e6e6;
 }
 
-/* Botões */
+/* Botões do login */
 
 .login-btn {
     margin-top: 2.5vw;
@@ -440,29 +440,10 @@ article img {
     text-align: start;
 }
 
-
-/* Tabela */
-
-.table-btn {
-    margin-left: 60vw;
-    cursor: pointer;
-    background-color: #00a7aa;
-    transition: .3s;
-}
-
-.table-btn:hover {
-    background-color: #019092;
-}
-
-.bg-table-thead {
-    background-color: #00a7aa;
-}
-
 .modal-footer button {
     width: 17vw;
     font-size: 1vw;
 }
-
 
 
 /* ESTILIZAÇÃO DO MENÚ RESPONSIVO */
@@ -555,7 +536,7 @@ article img {
     /* Modal de cadastro dos pais */
 
     .modal-content {
-        width: 90vw;
+        width: 85vw;
         box-shadow: none;
     }
 
@@ -563,33 +544,13 @@ article img {
         font-size: 3vw;
     }
 
-    .def-fisica, .def-intel {
-        font-size: 3.5vw;
-    }
-
     .modal-footer button {
         font-size: 3.5vw;
         width: 65vw;
     }
 
-    .tamanho-input-modal {
-        width: 100%;
-    }
-
     .coluna {
         flex-direction: column;
-    }
-
-    /* Modal do cadastro do aluno */
-
-    .modal-content {
-        width: 85vw;
-    }
-
-    .table-btn {
-        display: block;
-        font-size: 3.2vw;
-        margin: auto;
     }
 }
 
