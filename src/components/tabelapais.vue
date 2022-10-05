@@ -5,42 +5,63 @@
     <div class="body">
         <div class="cont mx-auto">
             <header><!-- início Cabeçalho -->
-                <nav class="navbar navbar-expand-lg"><!-- Menu -->
+                <nav class="navbar"><!-- Menu -->
                     <div class="container-fluid">
                         <div class="navbar-brand text-start"><!-- Logotipo "Todos Por Um" -->
-                            <a href="index.html">
-                                <h1 class="fw-bold text-dark"><span>TODOS</span><br>POR UM</h1>
+                            <a class="text-decoration-none text-dark" href="index.html">
+                                <h1 class="fw-bold"><span>TODOS</span><br>POR UM</h1>
                             </a>
                         </div><!-- /fim Logotipo "Todos Por Um" -->
                     
                         <!-- Menu responsivo -->
 
-                        <!-- Botão "hambúrguer" do menu responsivo -->
-                        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navegacao" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
+                        <!-- Botão do menu do usuário -->
+                        <button class="navbar-toggler conf" dtype="button" data-bs-toggle="offcanvas" data-bs-target="#abaLateral" aria-controls="abaLateral">
+                            <span class="material-icons">settings</span>
                         </button>
-                        <!-- /fim Botão "hambúrguer" do menu responsivo -->
+                        <!-- /fim Botão do menu do usuário -->
 
-                        <div id="navegacao" class="collapse navbar-collapse">
-                            <ul class="navbar-nav ms-auto">
-                                <li class="nav-item fw-bold">
-                                    <a href="index.html" class="nav-link">Início</a>
-                                </li>
+                        <!-- Aba lateral do usuário -->
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="abaLateral" aria-labelledby="abaLateralLabel">
+                            <!-- Cabeçalho da aba lateral -->
+                            <div class="offcanvas-header">
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div> <!-- /fim Cabeçalho da aba lateral -->
 
-                                <li class="nav-item fw-bold">
-                                    <a href="#" class="nav-link">Serviços</a>
-                                </li>
+                            <!-- Corpo da aba lateral -->
+                            <div class="offcanvas-body">
+                                <img src="https://picsum.photos/180" class="d-block mx-auto rounded-circle">
 
-                                <li class="nav-item fw-bold">
-                                    <a href="#" class="nav-link">Sobre</a>
-                                </li>
+                                <h5 class="fw-bold text-uppercase text-center mt-3">nome</h5>
 
-                                <li class="nav-item fw-bold">
-                                    <a href="#" class="nav-link">Contato</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div><!-- /fim Menu responsivo -->
+                                <div class="text-start">
+                                    <button type="button" class="btn mt-3 fw-bold">
+                                        <span class="material-icons">logout</span>
+                                        <sup>Sair</sup>
+                                    </button>
+                                </div>
+                                <hr>
+
+                                <ul class="list-group list-group-flush ms-2 text-start">
+                                    <li class="list-group-item fw-bold mb-2">
+                                        <a class="text-decoration-none" href="index.vue">Início</a>
+                                    </li>
+
+                                    <li class="list-group-item fw-bold mb-2">
+                                        <a class="text-decoration-none" href="#">Serviços</a>
+                                    </li>
+
+                                    <li class="list-group-item fw-bold mb-2">
+                                        <a class="text-decoration-none" href="#">Sobre</a>
+                                    </li>
+                                    
+                                    <li class="list-group-item fw-bold mb-2">
+                                        <a class="text-decoration-none" href="#">Contato</a>
+                                    </li>
+                                </ul>
+                            </div> <!-- /fim Corpo da aba lateral -->
+                        </div> <!-- /fim Aba lateral do usuário -->
+                    </div>
                 </nav> <!-- /fim Menu -->
             </header> <!-- /fim Cabeçalho -->
 
@@ -150,13 +171,13 @@
                                         </p>
                                     
                                         <div class="form-check form-check-inline">
-                                            <input type="radio" class="form-check-input" name="def" id="idDefSim" value="opt1" checked>
+                                            <input type="radio" class="form-check-input" name="def" id="idDefSim" value="opt1">
 
                                             <label for="idDefSim" class="form-check-label">Sim</label>
                                         </div>
 
                                         <div class="form-check form-check-inline">
-                                            <input type="radio" class="form-check-input" name="def" id="idDefNao" value="opt2">
+                                            <input type="radio" class="form-check-input" name="def" id="idDefNao" value="opt2" checked>
 
                                             <label for="idDefNao" type="radio" class="form-check-label">Não</label>
                                         </div>
@@ -314,11 +335,11 @@
                 </div>
             </div> <!-- /fim Modal -->
 
-            <main role="main" class="overflow-auto mx-auto">
+            <main role="main" class="overflow-auto mx-auto border border-2">
                 <!-- Tabela de alunos acadastrados (pais ou responsáveis) -->
-                <table class="table table-striped table-bordered table-hover text-center">
+                <table class="table table-striped table-bordered text-center">
                     <!-- Cabeçalho da tabela -->
-                    <thead class="bg-table-thead text-light">
+                    <thead class="text-light">
                         <th scope="col">ID</th>
                         <th scope="col">NOME</th>
                         <th scope="col">TURMA</th>
@@ -801,38 +822,66 @@
     /* Formatação do Cabeçalho (logo) */
     
     .navbar-brand h1 {
-        font-size: 3vw;
-        line-height: 2.8vw;
-    }
-    
-    .navbar-brand a {
-        text-decoration: none;
+        font-size: 2.5vw;
+        line-height: 2vw;
     }
 
     .navbar-brand span {
         color: #00a7aa;
     }
     
-    
+
+    /* Botão de configurações */
+
+    .container-fluid .conf {
+        background-color: #00a7aa;
+        transition: .3s;
+        padding: 6px 8px 3px 8px;
+    }
+
+    .container-fluid .conf:hover {
+        background-color: #019092;
+    }
+
+    .container-fluid .conf span {
+        font-size: 1.7vw;
+        color: white;
+    }
+
     /* Menu de navegação */
     
-    .nav-item {
-        margin-left: 3.5vw;
-        cursor: pointer;
-        font-size: .9vw;
+    .list-group-item {
+        border-bottom: 0;
     }
-    
-    .nav-link {
-        color: black;
+
+    .list-group-item a {
         transition: .3s;
     }
-    
-    .nav-link:hover, .ativo {
+
+    .list-group-item a:hover {
         color: #00a7aa;
     }
-    
-    .ativo {
-        cursor: auto;
+
+
+    /* Botão de sair */
+
+    .offcanvas-body button span {
+        font-size: 1.5vw;
+    }
+
+    .offcanvas-body button sup {
+        font-size: .9vw;
+        margin-left: .8vw;
+    }
+
+    .offcanvas-body button {
+        border-radius: 30px;
+        padding-bottom: 0;
+    }
+
+    .offcanvas-body button:hover {
+        background-color: #00a7aa;
+        color: white;
     }
 
     
@@ -856,7 +905,8 @@
     /* Tabela */
 
     main {
-        height: 49.7vh;
+        height: 47vh;
+        width: 40vw;
         box-shadow: 0px 10px 13px 2px rgba(0, 0, 0, 0.274);
     }
 
@@ -879,8 +929,9 @@
         background-color: #019092;
     }
     
-    .bg-table-thead {
+    thead {
         background-color: #00a7aa;
+        font-size: 1.3vw;
     }
     
     
@@ -899,29 +950,27 @@
             line-height: 4.2vw;
         }
     
-        /* Botão "hambúrguer" do menu responsivo */
-    
-        .navbar-toggler {
-            background-color: #00a7aa;
-        }
-    
-        /* Opções do menú: "Início", "Serviços", etc... */
-    
-        nav ul {
-            width: 35%;
-            margin: 5vw auto 0px auto;
-        }
-    
-        .nav-item {
-            margin-bottom: 5vw;
-        }
-    
-        .nav-link {
-            font-size: 5vw;
-        }
-    
 
-        /* Modal de cadastro dos alunos*/
+        /* Botão de configurações */
+
+        .container-fluid .conf span {
+            font-size: 6.5vw;
+        }
+
+
+        /* Botão de sair */
+
+        .offcanvas-body button span {
+            font-size: 7vw;
+        }
+
+        .offcanvas-body button sup {
+            font-size: 4vw;
+            margin-left: 3vw;
+        }
+
+
+        /* Modal de cadastro dos alunos */
     
         .modal-dialog {
             max-width: 85vw;
@@ -962,7 +1011,7 @@
         }
 
         thead {
-            font-size: 4vw;
+            font-size: 5vw;
         }
 
         table {

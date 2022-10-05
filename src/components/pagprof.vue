@@ -4,48 +4,68 @@
 
     <div class="body">
         <div class="cont mx-auto">
-            <header class="mb-4"><!-- início Cabeçalho -->
-                <nav class="navbar navbar-expand-lg"><!-- Menu -->
+            <header><!-- início Cabeçalho -->
+                <nav class="navbar"><!-- Menu -->
                     <div class="container-fluid">
                         <div class="navbar-brand text-start"><!-- Logotipo "Todos Por Um" -->
-                            <a href="index.html">
-                                <h1 class="fw-bold text-dark"><span>TODOS</span><br>POR UM</h1>
+                            <a class="text-decoration-none text-dark" href="index.html">
+                                <h1 class="fw-bold"><span>TODOS</span><br>POR UM</h1>
                             </a>
                         </div><!-- /fim Logotipo "Todos Por Um" -->
                     
                         <!-- Menu responsivo -->
 
-                        <!-- Botão "hambúrguer" do menu responsivo -->
-                        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navegacao" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
+                        <!-- Botão do menu do usuário -->
+                        <button class="navbar-toggler conf" dtype="button" data-bs-toggle="offcanvas" data-bs-target="#abaLateral" aria-controls="abaLateral">
+                            <span class="material-icons">settings</span>
                         </button>
-                        <!-- /fim Botão "hambúrguer" do menu responsivo -->
+                        <!-- /fim Botão do menu do usuário -->
 
-                        <div id="navegacao" class="collapse navbar-collapse">
-                            <ul class="navbar-nav ms-auto">
-                                <li class="nav-item fw-bold">
-                                    <a href="index.html" class="nav-link">Início</a>
-                                </li>
+                        <!-- Aba lateral do usuário -->
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="abaLateral" aria-labelledby="abaLateralLabel">
+                            <!-- Cabeçalho da aba lateral -->
+                            <div class="offcanvas-header">
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div> <!-- /fim Cabeçalho da aba lateral -->
 
-                                <li class="nav-item fw-bold">
-                                    <a href="#" class="nav-link">Serviços</a>
-                                </li>
+                            <!-- Corpo da aba lateral -->
+                            <div class="offcanvas-body">
+                                <img src="https://picsum.photos/180" class="d-block mx-auto rounded-circle">
 
-                                <li class="nav-item fw-bold">
-                                    <a href="#" class="nav-link">Sobre</a>
-                                </li>
+                                <h5 class="fw-bold text-uppercase text-center mt-3">nome</h5>
 
-                                <li class="nav-item fw-bold">
-                                    <a href="#" class="nav-link">Contato</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div><!-- /fim Menu responsivo -->
+                                <div class="text-start">
+                                    <button type="button" class="btn mt-3 fw-bold">
+                                        <span class="material-icons">logout</span>
+                                        <sup>Sair</sup>
+                                    </button>
+                                </div>
+                                <hr>
+
+                                <ul class="list-group list-group-flush ms-2 text-start">
+                                    <li class="list-group-item fw-bold mb-2">
+                                        <a class="text-decoration-none" href="index.vue">Início</a>
+                                    </li>
+
+                                    <li class="list-group-item fw-bold mb-2">
+                                        <a class="text-decoration-none" href="#">Serviços</a>
+                                    </li>
+
+                                    <li class="list-group-item fw-bold mb-2">
+                                        <a class="text-decoration-none" href="#">Sobre</a>
+                                    </li>
+                                    
+                                    <li class="list-group-item fw-bold mb-2">
+                                        <a class="text-decoration-none" href="#">Contato</a>
+                                    </li>
+                                </ul>
+                            </div> <!-- /fim Corpo da aba lateral -->
+                        </div> <!-- /fim Aba lateral do usuário -->
+                    </div>
                 </nav> <!-- /fim Menu -->
             </header> <!-- /fim Cabeçalho -->
 
-            <p class="text-end prof-nome">Prof. Nome</p>
-
+            
             <main role="main">
                 <!--
                 <div class="d-grid gap-2 col-6 mx-auto">
@@ -62,34 +82,56 @@
                     </button>
                 </div>-->
 
-                <p class="fs-1 fw-bold text-uppercase">1º ano - A</p>
+                <p class="sala fw-bold text-uppercase">1º ano - A - Manhã</p>
 
                 <div id="acordeao" class="accordion overflow-auto mx-auto border border-2 rounded">
                     <div class="accordion-item" id="accordion-1">
                         <h2 class="accordion-header" id="accordion-header-1">
-                            <button class="accordion-button collapsed fw-bold d-flex" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-collapse-1" aria-expanded="false" aria-controls="accordion-collapse-1">
+                            <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-collapse-1" aria-expanded="false" aria-controls="accordion-collapse-1">
                                 <p class="col">FULANO</p>
                                     
-                                <span class="material-icons fs-1 me-3">all_inclusive</span>
+                                <img class="me-3 fs-6" src="imgs/fita.png" alt="Aluno(a) deficiente">
 
-                                <img src="https://picsum.photos/45" class="border  border-info rounded-circle me-2">
+                                <img src="https://picsum.photos/45" class="border border-info rounded-circle me-2">
                             </button>
                         </h2>
 
                         <div id="accordion-collapse-1" class="accordion-collapse collapse" data-bs-parent="#acordeao" aria-labelledby="accordion-header-1">
-                            <div class="accordion-body">
-                                    <p>
-                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta nihil nemo neque tempore. Numquam nulla culpa voluptates perspiciatis ratione doloribus dolorum in fuga, illum, laudantium labore quos natus aut! Magnam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita hic magni quisquam et pariatur culpa ratione neque, quae dicta illo vitae beatae eos a fugit praesentium minus inventore sapiente est. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt cupiditate natus quidem sint rerum eligendi doloremque necessitatibus sunt excepturi. A, repellendus eligendi? Quae at quos alias repellendus illum omnis ut.
-                                    </p>
+                            <div class="accordion-body mx-auto">
+                                <div class="d-flex">
+                                    <div class="col text-start fw-bold">
+                                        <p>Nome:</p>
+                                        <p>Sobrenome:</p>
+                                        <p>Data de Nascimento:</p>
+                                        <p>Sexo:</p>
+                                        <p>Tipo Sanguíneo:</p>
+                                        <p>Deficiência:</p>
+                                        <p>Nome do pai:</p>
+                                        <p>Nome da mãe:</p>
+                                        <p>E-mail:</p>
+                                        <p>Número:</p>
+                                        <p>Endereço:</p>
+                                    </div>
 
-                                    <p>
-                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta nihil nemo neque tempore. Numquam nulla culpa voluptates perspiciatis ratione doloribus dolorum in fuga, illum, laudantium labore quos natus aut! Magnam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita hic magni quisquam et pariatur culpa ratione neque, quae dicta illo vitae beatae eos a fugit praesentium minus inventore sapiente est. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt cupiditate natus quidem sint rerum eligendi doloremque necessitatibus sunt excepturi. A, repellendus eligendi? Quae at quos alias repellendus illum omnis ut.
-                                    </p>
+                                    <div class="col text-end">
+                                        <p>Fulano</p>
+                                        <p>de Tal</p>
+                                        <p>X</p>
+                                        <p>X</p>
+                                        <p>X</p>
+                                        <p>X</p>
+                                        <p>X</p>
+                                        <p>X</p>
+                                        <p>X</p>
+                                        <p>X</p>
+                                        <p>X</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="accordion-item" id="accordion-1">
+                    <div class="accordion-item" id="accordion-2">
                         <h2 class="accordion-header" id="accordion-header-2">
                             <button class="accordion-button collapsed fw-bold d-flex" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-collapse-2" aria-expanded="false" aria-controls="accordion-collapse-2">
                                 <p class="col">CICLANO</p>
@@ -98,14 +140,36 @@
                         </h2>
 
                         <div id="accordion-collapse-2" class="accordion-collapse collapse" data-bs-parent="#acordeao" aria-labelledby="accordion-header-2">
-                            <div class="accordion-body">
-                                    <p>
-                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta nihil nemo neque tempore. Numquam nulla culpa voluptates perspiciatis ratione doloribus dolorum in fuga, illum, laudantium labore quos natus aut! Magnam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita hic magni quisquam et pariatur culpa ratione neque, quae dicta illo vitae beatae eos a fugit praesentium minus inventore sapiente est. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt cupiditate natus quidem sint rerum eligendi doloremque necessitatibus sunt excepturi. A, repellendus eligendi? Quae at quos alias repellendus illum omnis ut.
-                                    </p>
+                            <div class="accordion-body mx-auto">
+                                <div class="d-flex">
+                                    <div class="col text-start fw-bold">
+                                        <p>Nome:</p>
+                                        <p>Sobrenome:</p>
+                                        <p>Data de Nascimento:</p>
+                                        <p>Sexo:</p>
+                                        <p>Tipo Sanguíneo:</p>
+                                        <p>Deficiência:</p>
+                                        <p>Nome do pai:</p>
+                                        <p>Nome da mãe:</p>
+                                        <p>E-mail:</p>
+                                        <p>Número:</p>
+                                        <p>Endereço:</p>
+                                    </div>
 
-                                    <p>
-                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta nihil nemo neque tempore. Numquam nulla culpa voluptates perspiciatis ratione doloribus dolorum in fuga, illum, laudantium labore quos natus aut! Magnam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita hic magni quisquam et pariatur culpa ratione neque, quae dicta illo vitae beatae eos a fugit praesentium minus inventore sapiente est. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt cupiditate natus quidem sint rerum eligendi doloremque necessitatibus sunt excepturi. A, repellendus eligendi? Quae at quos alias repellendus illum omnis ut.
-                                    </p>
+                                    <div class="col text-end">
+                                        <p>Ciclano</p>
+                                        <p>de Tal</p>
+                                        <p>X</p>
+                                        <p>X</p>
+                                        <p>X</p>
+                                        <p>X</p>
+                                        <p>X</p>
+                                        <p>X</p>
+                                        <p>X</p>
+                                        <p>X</p>
+                                        <p>X</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -119,14 +183,36 @@
                         </h2>
 
                         <div id="accordion-collapse-3" class="accordion-collapse collapse" data-bs-parent="#acordeao" aria-labelledby="accordion-header-3">
-                            <div class="accordion-body">
-                                    <p>
-                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta nihil nemo neque tempore. Numquam nulla culpa voluptates perspiciatis ratione doloribus dolorum in fuga, illum, laudantium labore quos natus aut! Magnam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita hic magni quisquam et pariatur culpa ratione neque, quae dicta illo vitae beatae eos a fugit praesentium minus inventore sapiente est. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt cupiditate natus quidem sint rerum eligendi doloremque necessitatibus sunt excepturi. A, repellendus eligendi? Quae at quos alias repellendus illum omnis ut.
-                                    </p>
+                            <div class="accordion-body mx-auto">
+                                <div class="d-flex">
+                                    <div class="col text-start fw-bold">
+                                        <p>Nome:</p>
+                                        <p>Sobrenome:</p>
+                                        <p>Data de Nascimento:</p>
+                                        <p>Sexo:</p>
+                                        <p>Tipo Sanguíneo:</p>
+                                        <p>Deficiência:</p>
+                                        <p>Nome do pai:</p>
+                                        <p>Nome da mãe:</p>
+                                        <p>E-mail:</p>
+                                        <p>Número:</p>
+                                        <p>Endereço:</p>
+                                    </div>
 
-                                    <p>
-                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta nihil nemo neque tempore. Numquam nulla culpa voluptates perspiciatis ratione doloribus dolorum in fuga, illum, laudantium labore quos natus aut! Magnam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita hic magni quisquam et pariatur culpa ratione neque, quae dicta illo vitae beatae eos a fugit praesentium minus inventore sapiente est. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt cupiditate natus quidem sint rerum eligendi doloremque necessitatibus sunt excepturi. A, repellendus eligendi? Quae at quos alias repellendus illum omnis ut.
-                                    </p>
+                                    <div class="col text-end">
+                                        <p>Beutrano</p>
+                                        <p>de Tal</p>
+                                        <p>X</p>
+                                        <p>X</p>
+                                        <p>X</p>
+                                        <p>X</p>
+                                        <p>X</p>
+                                        <p>X</p>
+                                        <p>X</p>
+                                        <p>X</p>
+                                        <p>X</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -136,21 +222,44 @@
                             <button class="accordion-button collapsed fw-bold d-flex" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-collapse-4" aria-expanded="false" aria-controls="accordion-collapse-4">
                                 <p class="col">REBOCO DE PAREDE</p>
 
-                                <span class="material-icons fs-1 me-3">all_inclusive</span>
+                                <!--<span class="material-icons fs-1 me-3">all_inclusive</span>-->
+                                <img class="me-3 fs-6" src="imgs/fita.png" alt="Aluno(a) deficiente">
 
                                 <img src="https://picsum.photos/45" class="border border-info rounded-circle me-2">
                             </button>
                         </h2>
 
                         <div id="accordion-collapse-4" class="accordion-collapse collapse" data-bs-parent="#acordeao" aria-labelledby="accordion-header-4">
-                            <div class="accordion-body">
-                                    <p>
-                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta nihil nemo neque tempore. Numquam nulla culpa voluptates perspiciatis ratione doloribus dolorum in fuga, illum, laudantium labore quos natus aut! Magnam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita hic magni quisquam et pariatur culpa ratione neque, quae dicta illo vitae beatae eos a fugit praesentium minus inventore sapiente est. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt cupiditate natus quidem sint rerum eligendi doloremque necessitatibus sunt excepturi. A, repellendus eligendi? Quae at quos alias repellendus illum omnis ut.
-                                    </p>
+                            <div class="accordion-body mx-auto">
+                                <div class="d-flex">
+                                    <div class="col text-start fw-bold">
+                                        <p>Nome:</p>
+                                        <p>Sobrenome:</p>
+                                        <p>Data de Nascimento:</p>
+                                        <p>Sexo:</p>
+                                        <p>Tipo Sanguíneo:</p>
+                                        <p>Deficiência:</p>
+                                        <p>Nome do pai:</p>
+                                        <p>Nome da mãe:</p>
+                                        <p>E-mail:</p>
+                                        <p>Número:</p>
+                                        <p>Endereço:</p>
+                                    </div>
 
-                                    <p>
-                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta nihil nemo neque tempore. Numquam nulla culpa voluptates perspiciatis ratione doloribus dolorum in fuga, illum, laudantium labore quos natus aut! Magnam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita hic magni quisquam et pariatur culpa ratione neque, quae dicta illo vitae beatae eos a fugit praesentium minus inventore sapiente est. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt cupiditate natus quidem sint rerum eligendi doloremque necessitatibus sunt excepturi. A, repellendus eligendi? Quae at quos alias repellendus illum omnis ut.
-                                    </p>
+                                    <div class="col text-end">
+                                        <p>Reboco</p>
+                                        <p>de Parede</p>
+                                        <p>X</p>
+                                        <p>X</p>
+                                        <p>X</p>
+                                        <p>X</p>
+                                        <p>X</p>
+                                        <p>X</p>
+                                        <p>X</p>
+                                        <p>X</p>
+                                        <p>X</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -165,14 +274,36 @@
                         </h2>
 
                         <div id="accordion-collapse-5" class="accordion-collapse collapse" data-bs-parent="#acordeao" aria-labelledby="accordion-header-5">
-                            <div class="accordion-body">
-                                    <p>
-                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta nihil nemo neque tempore. Numquam nulla culpa voluptates perspiciatis ratione doloribus dolorum in fuga, illum, laudantium labore quos natus aut! Magnam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita hic magni quisquam et pariatur culpa ratione neque, quae dicta illo vitae beatae eos a fugit praesentium minus inventore sapiente est. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt cupiditate natus quidem sint rerum eligendi doloremque necessitatibus sunt excepturi. A, repellendus eligendi? Quae at quos alias repellendus illum omnis ut.
-                                    </p>
+                            <div class="accordion-body mx-auto">
+                                <div class="d-flex">
+                                    <div class="col text-start fw-bold">
+                                        <p>Nome:</p>
+                                        <p>Sobrenome:</p>
+                                        <p>Data de Nascimento:</p>
+                                        <p>Sexo:</p>
+                                        <p>Tipo Sanguíneo:</p>
+                                        <p>Deficiência:</p>
+                                        <p>Nome do pai:</p>
+                                        <p>Nome da mãe:</p>
+                                        <p>E-mail:</p>
+                                        <p>Número:</p>
+                                        <p>Endereço:</p>
+                                    </div>
 
-                                    <p>
-                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta nihil nemo neque tempore. Numquam nulla culpa voluptates perspiciatis ratione doloribus dolorum in fuga, illum, laudantium labore quos natus aut! Magnam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita hic magni quisquam et pariatur culpa ratione neque, quae dicta illo vitae beatae eos a fugit praesentium minus inventore sapiente est. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt cupiditate natus quidem sint rerum eligendi doloremque necessitatibus sunt excepturi. A, repellendus eligendi? Quae at quos alias repellendus illum omnis ut.
-                                    </p>
+                                    <div class="col text-end">
+                                        <p>Debiloide</p>
+                                        <p>Albucierre</p>
+                                        <p>X</p>
+                                        <p>X</p>
+                                        <p>X</p>
+                                        <p>X</p>
+                                        <p>X</p>
+                                        <p>X</p>
+                                        <p>X</p>
+                                        <p>X</p>
+                                        <p>X</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -182,21 +313,88 @@
                             <button class="accordion-button collapsed fw-bold d-flex" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-collapse-6" aria-expanded="false" aria-controls="accordion-collapse-6">
                                 <p class="col">PEDRINHO BIGODE</p>
 
-                                <span class="material-icons fs-1 me-3">all_inclusive</span>
+                                <!--<span class="material-icons fs-1 me-3">all_inclusive</span>-->
+
+                                <img class="me-3 fs-6" src="imgs/fita.png" alt="Aluno(a) deficiente">
 
                                 <img src="https://picsum.photos/45" class="border border-info rounded-circle me-2">
                             </button>
                         </h2>
 
                         <div id="accordion-collapse-6" class="accordion-collapse collapse" data-bs-parent="#acordeao" aria-labelledby="accordion-header-6">
-                            <div class="accordion-body">
-                                    <p>
-                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta nihil nemo neque tempore. Numquam nulla culpa voluptates perspiciatis ratione doloribus dolorum in fuga, illum, laudantium labore quos natus aut! Magnam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita hic magni quisquam et pariatur culpa ratione neque, quae dicta illo vitae beatae eos a fugit praesentium minus inventore sapiente est. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt cupiditate natus quidem sint rerum eligendi doloremque necessitatibus sunt excepturi. A, repellendus eligendi? Quae at quos alias repellendus illum omnis ut.
-                                    </p>
+                            <div class="accordion-body mx-auto">
+                                <div class="d-flex">
+                                    <div class="col text-start fw-bold">
+                                        <p>Nome:</p>
+                                        <p>Sobrenome:</p>
+                                        <p>Data de Nascimento:</p>
+                                        <p>Sexo:</p>
+                                        <p>Tipo Sanguíneo:</p>
+                                        <p>Deficiência:</p>
+                                        <p>Nome do pai:</p>
+                                        <p>Nome da mãe:</p>
+                                        <p>E-mail:</p>
+                                        <p>Número:</p>
+                                        <p>Endereço:</p>
+                                    </div>
 
-                                    <p>
-                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta nihil nemo neque tempore. Numquam nulla culpa voluptates perspiciatis ratione doloribus dolorum in fuga, illum, laudantium labore quos natus aut! Magnam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita hic magni quisquam et pariatur culpa ratione neque, quae dicta illo vitae beatae eos a fugit praesentium minus inventore sapiente est. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt cupiditate natus quidem sint rerum eligendi doloremque necessitatibus sunt excepturi. A, repellendus eligendi? Quae at quos alias repellendus illum omnis ut.
-                                    </p>
+                                    <div class="col text-end">
+                                        <p>Pedrinho</p>
+                                        <p>Bigode</p>
+                                        <p>X</p>
+                                        <p>X</p>
+                                        <p>X</p>
+                                        <p>X</p>
+                                        <p>X</p>
+                                        <p>X</p>
+                                        <p>X</p>
+                                        <p>X</p>
+                                        <p>X</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item" id="accordion-7">
+                        <h2 class="accordion-header" id="accordion-header-7">
+                            <button class="accordion-button collapsed fw-bold d-flex" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-collapse-7" aria-expanded="false" aria-controls="accordion-collapse-7">
+                                <p class="col">CARA DE PERCATA</p>
+                                <img src="https://picsum.photos/45" class="border border-info rounded-circle me-2">
+                            </button>
+                        </h2>
+
+                        <div id="accordion-collapse-7" class="accordion-collapse collapse" data-bs-parent="#acordeao" aria-labelledby="accordion-header-7">
+                            <div class="accordion-body mx-auto">
+                                <div class="d-flex">
+                                    <div class="col text-start fw-bold">
+                                        <p>Nome:</p>
+                                        <p>Sobrenome:</p>
+                                        <p>Data de Nascimento:</p>
+                                        <p>Sexo:</p>
+                                        <p>Tipo Sanguíneo:</p>
+                                        <p>Deficiência:</p>
+                                        <p>Nome do pai:</p>
+                                        <p>Nome da mãe:</p>
+                                        <p>E-mail:</p>
+                                        <p>Número:</p>
+                                        <p>Endereço:</p>
+                                    </div>
+
+                                    <div class="col text-end">
+                                        <p>Cara</p>
+                                        <p>de Percata</p>
+                                        <p>X</p>
+                                        <p>X</p>
+                                        <p>X</p>
+                                        <p>X</p>
+                                        <p>X</p>
+                                        <p>X</p>
+                                        <p>X</p>
+                                        <p>X</p>
+                                        <p>X</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -204,41 +402,42 @@
                     <div class="accordion-item" id="accordion-8">
                         <h2 class="accordion-header" id="accordion-header-8">
                             <button class="accordion-button collapsed fw-bold d-flex" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-collapse-8" aria-expanded="false" aria-controls="accordion-collapse-8">
-                                <p class="col">CARA DE PERCATA</p>
-                                <img src="https://picsum.photos/45" class="border border-info rounded-circle me-2">
-                            </button>
-                        </h2>
-
-                        <div id="accordion-collapse-8" class="accordion-collapse collapse" data-bs-parent="#acordeao" aria-labelledby="accordion-header-8">
-                            <div class="accordion-body">
-                                    <p>
-                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta nihil nemo neque tempore. Numquam nulla culpa voluptates perspiciatis ratione doloribus dolorum in fuga, illum, laudantium labore quos natus aut! Magnam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita hic magni quisquam et pariatur culpa ratione neque, quae dicta illo vitae beatae eos a fugit praesentium minus inventore sapiente est. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt cupiditate natus quidem sint rerum eligendi doloremque necessitatibus sunt excepturi. A, repellendus eligendi? Quae at quos alias repellendus illum omnis ut.
-                                    </p>
-
-                                    <p>
-                                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta nihil nemo neque tempore. Numquam nulla culpa voluptates perspiciatis ratione doloribus dolorum in fuga, illum, laudantium labore quos natus aut! Magnam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita hic magni quisquam et pariatur culpa ratione neque, quae dicta illo vitae beatae eos a fugit praesentium minus inventore sapiente est. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt cupiditate natus quidem sint rerum eligendi doloremque necessitatibus sunt excepturi. A, repellendus eligendi? Quae at quos alias repellendus illum omnis ut.
-                                    </p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item" id="accordion-9">
-                        <h2 class="accordion-header" id="accordion-header-9">
-                            <button class="accordion-button collapsed fw-bold d-flex" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-collapse-9" aria-expanded="false" aria-controls="accordion-collapse-9">
                                 <p class="col">JOÃO CACHAÇA</p>
                                 <img src="https://picsum.photos/45" class="border border-info rounded-circle me-2">
                             </button>
                         </h2>
 
-                        <div id="accordion-collapse-9" class="accordion-collapse collapse" data-bs-parent="#acordeao" aria-labelledby="accordion-header-9">
-                            <div class="accordion-body">
-                                <p>
-                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta nihil nemo neque tempore. Numquam nulla culpa voluptates perspiciatis ratione doloribus dolorum in fuga, illum, laudantium labore quos natus aut! Magnam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita hic magni quisquam et pariatur culpa ratione neque, quae dicta illo vitae beatae eos a fugit praesentium minus inventore sapiente est. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt cupiditate natus quidem sint rerum eligendi doloremque necessitatibus sunt excepturi. A, repellendus eligendi? Quae at quos alias repellendus illum omnis ut.
-                                </p>
+                        <div id="accordion-collapse-8" class="accordion-collapse collapse" data-bs-parent="#acordeao" aria-labelledby="accordion-header-8">
+                            <div class="accordion-body mx-auto">
+                                <div class="d-flex">
+                                    <div class="col text-start fw-bold">
+                                        <p>Nome:</p>
+                                        <p>Sobrenome:</p>
+                                        <p>Data de Nascimento:</p>
+                                        <p>Sexo:</p>
+                                        <p>Tipo Sanguíneo:</p>
+                                        <p>Deficiência:</p>
+                                        <p>Nome do pai:</p>
+                                        <p>Nome da mãe:</p>
+                                        <p>E-mail:</p>
+                                        <p>Número:</p>
+                                        <p>Endereço:</p>
+                                    </div>
 
-                                <p>
-                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta nihil nemo neque tempore. Numquam nulla culpa voluptates perspiciatis ratione doloribus dolorum in fuga, illum, laudantium labore quos natus aut! Magnam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita hic magni quisquam et pariatur culpa ratione neque, quae dicta illo vitae beatae eos a fugit praesentium minus inventore sapiente est. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt cupiditate natus quidem sint rerum eligendi doloremque necessitatibus sunt excepturi. A, repellendus eligendi? Quae at quos alias repellendus illum omnis ut.
-                                </p>
+                                    <div class="col text-end">
+                                        <p>João</p>
+                                        <p>Cachaça</p>
+                                        <p>X</p>
+                                        <p>X</p>
+                                        <p>X</p>
+                                        <p>X</p>
+                                        <p>X</p>
+                                        <p>X</p>
+                                        <p>X</p>
+                                        <p>X</p>
+                                        <p>X</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -330,25 +529,58 @@
     }
     
     
+    /* Botão de configurações */
+
+    .container-fluid .conf {
+        background-color: #00a7aa;
+        transition: .3s;
+        padding: 6px 8px 3px 8px;
+    }
+
+    .container-fluid .conf:hover {
+        background-color: #019092;
+    }
+
+    .container-fluid .conf span {
+        font-size: 1.7vw;
+        color: white;
+    }
+
+
     /* Menu de navegação */
     
-    .nav-item {
-        margin-left: 3.5vw;
-        cursor: pointer;
-        font-size: .9vw;
+    .list-group-item {
+        border-bottom: 0;
     }
-    
-    .nav-link {
-        color: black;
+
+    .list-group-item a {
         transition: .3s;
     }
-    
-    .nav-link:hover {
+
+    .list-group-item a:hover {
         color: #00a7aa;
     }
-    
-    .prof-nome {
-        font-size: 1.2vw;
+
+
+    /* Botão de sair */
+
+    .offcanvas-body button span {
+        font-size: 1.5vw;
+    }
+
+    .offcanvas-body button sup {
+        font-size: .9vw;
+        margin-left: .8vw;
+    }
+
+    .offcanvas-body button {
+        border-radius: 30px;
+        padding-bottom: 0;
+    }
+
+    .offcanvas-body button:hover {
+        background-color: #00a7aa;
+        color: white;
     }
 
 
@@ -358,16 +590,21 @@
         margin-top: 6vw;
     }
 
+    .sala {
+        font-size: 2vw;
+    }
+
     .accordion {
         width: 50%;
         height: 45.3vh;
     }
 
-    button {
+    .d-grid button {
         background-color: #00a7aa;
+        margin-bottom: 1.3vw;
     }
 
-    button:hover {
+    .d-grid button:hover {
         background-color: #009092;
     }
 
@@ -388,6 +625,18 @@
         border-color: #00babd4d;
     }
 
+
+    /* Corpo do accordion */
+
+    .accordion-body {
+        font-size: .9vw;
+        width: 75%;
+    }
+
+    .accordion-body p {
+        border-bottom: 1px solid #00a7aa;
+    }
+
     
     /* ESTILIZAÇÃO DO MENÚ RESPONSIVO */
     
@@ -403,33 +652,32 @@
             font-size: 5vw;
             line-height: 4.2vw;
         }
-    
-        /* Botão "hambúrguer" do menu responsivo */
-    
-        .navbar-toggler {
-            background-color: #00a7aa;
-        }
-    
-        /* Opções do menú: "Início", "Serviços", etc... */
-    
-        nav ul {
-            width: 35%;
-            margin: 5vw auto 0px auto;
-        }
-    
-        .nav-item {
-            margin-bottom: 5vw;
-        }
-    
-        .nav-link {
-            font-size: 5vw;
-        }
 
         
-        /* Nome do(a) professor(a) */
+        /* Botão de configurações */
 
-        .prof-nome {
+        .container-fluid .conf span {
             font-size: 6.5vw;
+            color: white;
+        }
+
+
+        /* Botão de sair */
+
+        .offcanvas-body button span {
+            font-size: 7vw;
+        }
+
+        .offcanvas-body button sup {
+            font-size: 4vw;
+            margin-left: 3vw;
+        }
+
+
+        /* Título da sala */
+
+        .sala {
+            font-size: 6vw;
         }
 
 
@@ -437,7 +685,7 @@
 
         .accordion {
             width: 90%;
-            height: 57.2vh;
+            height: 49.8vh;
         }
 
         .accordion-header button {
@@ -446,6 +694,18 @@
 
         .accordion img {
             width: 10vw;
+        }
+
+
+        /* Corpo do Acordeão */
+
+        .accordion-body {
+            font-size: 3.2vw;
+            width: 100%;
+        }
+
+        .accordion-body p {
+            border-bottom: 1px solid #00a7aa;
         }
     }
 </style>
