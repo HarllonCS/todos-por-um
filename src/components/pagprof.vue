@@ -497,7 +497,7 @@
         font-weight: normal;
         font-style: normal;
     }
-    
+
     .body {
         background-color: whitesmoke;
         font-family: 'poppinsregular';
@@ -589,7 +589,7 @@
     }
 
     .accordion {
-        width: 50%;
+        width: 90%;
         height: 45.3vh;
     }
 
