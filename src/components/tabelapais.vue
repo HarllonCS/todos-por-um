@@ -16,9 +16,7 @@
                         <!-- Menu responsivo -->
 
                         <!-- Botão do menu do usuário -->
-                        <button class="navbar-toggler conf" dtype="button" data-bs-toggle="offcanvas" data-bs-target="#abaLateral" aria-controls="abaLateral">
-                            <span class="material-icons">settings</span>
-                        </button>
+                        <a class="perfil" type="button" data-bs-toggle="offcanvas" data-bs-target="#abaLateral" aria-controls="abaLateral">Meu Perfil</a>
                         <!-- /fim Botão do menu do usuário -->
 
                         <!-- Aba lateral do usuário -->
@@ -833,19 +831,16 @@
 
     /* Botão de configurações */
 
-    .container-fluid .conf {
-        background-color: #00a7aa;
+    .container-fluid .perfil {
+        color: #00a7aa;
         transition: .3s;
-        padding: 6px 8px 3px 8px;
+        text-decoration: none;
     }
 
-    .container-fluid .conf:hover {
-        background-color: #019092;
-    }
-
-    .container-fluid .conf span {
-        font-size: 1.7vw;
-        color: white;
+    .container-fluid .perfil:hover {
+        color: #019092;
+        text-decoration: underline;
+        text-decoration-thickness: 1.5px;
     }
 
     /* Menu de navegação */
@@ -937,7 +932,7 @@
     
     /* ESTILIZAÇÃO RESPONSIVA */
     
-    @media (max-width: 991.98px) {
+    @media (max-width: 767.98px) {
     
         .cont {
             width: 95vw;
@@ -948,13 +943,6 @@
         .navbar-brand h1 {
             font-size: 5vw;
             line-height: 4.2vw;
-        }
-    
-
-        /* Botão de configurações */
-
-        .container-fluid .conf span {
-            font-size: 6.5vw;
         }
 
 
@@ -1016,6 +1004,138 @@
 
         table {
             font-size: 3.6vw;
+        }
+    }
+
+    @media (min-width: 768px) and (max-width: 991.98px) {
+        .cont {
+            width: 95vw;
+        }
+
+        .navbar-brand h1 {
+            font-size: 4vw;
+            line-height: 3.6vw;
+        }
+
+        .list-group {
+            font-size: 2.5vw;
+        }
+
+        /* Botão da tabela */
+    
+        .table-btn {
+            margin: 0 auto 6vw 0;
+        }
+
+        /* Tabela */
+
+        main {
+            box-shadow: none;
+            width: 98%;
+        }
+
+        thead {
+            font-size: 3vw;
+        }
+
+        table {
+            font-size: 2.7vw;
+        }
+
+        /* Modal de cadastro dos alunos */
+    
+        .modal-dialog {
+            max-width: 85vw;
+            box-shadow: none;
+        }
+
+        .container-fluid .perfil {
+            font-size: 2.5vw;
+        }
+
+
+        /* Botão de sair */
+
+        .offcanvas-body button span {
+            font-size: 3.5vw;
+        }
+
+        .offcanvas-body button sup {
+            font-size: 2vw;
+            margin-left: 3vw;
+        }
+
+        /* Modal */
+
+        .modal-footer button {
+            font-size: 2.5vw;
+        }
+    }
+
+    @media (min-width: 992px) and (max-width: 1199.98px) {
+        /* Título "Todos Por Um" */
+
+        .navbar-brand h1 {
+            font-size: 3.5vw;
+            line-height: 2.8vw;
+        }
+
+        /* Botão da tabela */
+    
+        .table-btn {
+            margin: 0 auto 3vw 0;
+        }
+
+        /* Tabela */
+
+        main {
+            box-shadow: none;
+            width: 90%;
+        }
+
+        thead {
+            font-size: 2.5vw;
+        }
+
+        table {
+            font-size: 2vw;
+        }
+
+        /* Botão de sair */
+
+        .offcanvas-body button span {
+            font-size: 2.5vw;
+        }
+
+        .offcanvas-body button sup {
+            font-size: 1.6vw;
+            margin-left: 2vw;
+        }
+
+        .list-group {
+            font-size: 1.8vw;
+        }
+
+        /* Modal de cadastro dos alunos */
+    
+        .modal-dialog {
+            max-width: 80vw;
+        }
+
+        .modal-footer button {
+            font-size: 2vw;
+        }
+    }
+
+    @media (min-width: 1200px) and (max-width: 1399.98) {
+        /* Modal de cadastro dos alunos */
+    
+        .modal-dialog {
+            max-width: 80vw;
+        }
+
+        .modal-footer {
+            font-size: 5vw;
         }
     }
 </style>

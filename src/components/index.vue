@@ -42,7 +42,7 @@
             </header> <!-- /fim Cabeçalho -->
 
             <main role="main" class="d-flex"> <!-- Tela de login -->
-                <aside class="shadow" data-aos="zoom-in" data-aos-duration="850"> <!-- Texto e formulário -->
+                <aside class="shadow"> <!-- Texto e formulário -->
 
                     <!-- Texto da tela de login -->
                     <h2 class="fw-bold">
@@ -60,7 +60,7 @@
                         <div class="login-btn d-flex">
                             <input type="submit" class="btn fw-bold text-light" value="ENTRAR">
 
-                            <a class="fw-bold" type="button" data-bs-toggle="modal" data-bs-target="#formModal">Cadastrar</a>
+                            <a class="fw-bold linkCadastro" type="button" data-bs-toggle="modal" data-bs-target="#formModal">Cadastrar</a>
                         </div>
                     </form> <!-- /fim Formulário da tela de login -->
                 </aside> <!-- /fim Texto e formulário -->
@@ -142,7 +142,7 @@
                                             <label for="idTel">Telefone:</label>
 
                                             <div class="input-group">
-                                                <span class="input-group-text" id="basic-addon">+55</span>
+                                                <span class="input-group-text text-dark" id="basic-addon">+55</span>
 
                                                 <input type="tel" id="idTel" class="form-control" aria-label="usrTelefone" aria-describedby="basic-addon">
                                             </div>
@@ -158,7 +158,6 @@
 
                                     <!-- Localização -->
                                     <div class="row coluna">
-
                                         <p>
                                             Localização:
                                             <small class="text-danger">*</small>
@@ -239,7 +238,7 @@
                 </div>  <!-- /fim Modal -->
 
                 <article> <!-- Imagem de crianças pulando -->
-                    <img src="imgs/login-gif.svg" alt="Crianças pulando alegremente">
+                    <img src="./imgs/login-gif.svg" alt="Crianças pulando alegremente">
                 </article> <!-- /fim Imagem de crianças pulando -->
             </main> <!-- /fim Tela de login -->
         </div>
@@ -370,14 +369,6 @@ span {
     color: #00a7aa;
 }
 
-/*
-aside p {
-    line-height: 1.3vw;
-    font-family: 'poppinslight';
-    font-size: .9vw;
-}
-*/
-
 /* Formatação dos campos (inputs) */
 
 .login-inputs {
@@ -446,9 +437,13 @@ article img {
 }
 
 
-/* ESTILIZAÇÃO DO MENÚ RESPONSIVO */
+/* ESTILIZAÇÃO RESPONSIVA */
 
-@media (max-width: 991.98px) {
+@media (max-width: 767.98px) {
+
+    header {
+        margin-bottom: 6vw;
+    }
 
     /* Título "Todos Por Um" */
 
@@ -478,22 +473,17 @@ article img {
         font-size: 5vw;
     }
 
+
+    /* Tela de login */
+
     aside {
         width: 100%;
     }
 
     aside h2 {
         font-size: 8vw;
-        text-align: center;
         line-height: 9vw;
     }
-
-    /*
-    aside p {
-        line-height: 3.8vw;
-        font-size: 2.5vw;
-    }
-    */
 
     .login-inputs {
         font-size: 4vw;
@@ -521,7 +511,7 @@ article img {
 
     /* Link para Cadastrar */
 
-    .login-btn a {
+    .login-btn .linkCadastro {
         margin: 6vw auto 0 auto;
         font-size: 4vw;
     }
@@ -554,4 +544,152 @@ article img {
     }
 }
 
+@media (min-width: 768px) and (max-width: 991.98px) {
+    /* Botão "hambúrguer" do menu responsivo */
+
+    .navbar-toggler {
+        background-color: #00a7aa;
+    }
+
+
+    /* Opções do menú: "Início", "Serviços", etc... */
+
+    nav ul {
+        width: 35%;
+        margin: 5vw auto 0px auto;
+    }
+
+    .nav-item {
+        margin-bottom: 2vw;
+    }
+
+    .nav-link {
+        font-size: 3vw;
+    }
+
+
+    /* Tela de login */
+
+    aside {
+        width: 100%;
+    }
+
+    aside h2 {
+        font-size: 7.3vw;
+        line-height: 6.8vw;
+    }
+
+    /* Campos login */
+
+    .login-inputs {
+        font-size: 3vw;
+    }
+
+    aside input[type="email"], aside input[type="password"] {
+        padding: 3vw;
+        margin-top: 3vw;
+    }
+
+    /* Botão de "ENTRAR" */
+
+    .login-btn input {
+        font-size: 4vw;
+        margin-top: 4vw;
+        padding: 2vw 4vw;
+    }
+
+    /* Link para Cadastrar */
+
+    .login-btn .linkCadastro {
+        margin: 6vw 0 0 auto;
+        font-size: 3.5vw;
+    }
+
+    /* Imagem animada não aparece */
+
+    img {
+        display: none;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+    header {
+        margin-bottom: 5vw;
+    }
+
+    /* Menu de navegação */
+
+    .nav-item {
+        margin-left: 2.8vw;
+        font-size: 1.2vw;
+    }
+
+    /* Tela de login */
+
+    aside {
+        width: 50%;
+    }
+
+    aside h2 {
+        font-size: 3.6vw;
+        line-height: 3.5vw;
+    }
+
+    /* Campos login */
+
+    .login-inputs {
+        font-size: 1.8vw;
+        margin-top: -1vw;
+    }
+
+    aside input[type="email"], aside input[type="password"] {
+        margin-top: 1vw;
+    }
+
+    /* Link para Cadastrar */
+
+    .login-btn .linkCadastro {
+        margin-top: 1.3vw;
+        font-size: 1.3vw;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+    /* Menu de navegação */
+
+    .nav-item {
+        margin-left: 2.8vw;
+        font-size: 1.1vw;
+    }
+
+    /* Tela de login */
+
+    aside {
+        width: 50%;
+    }
+
+    aside h2 {
+        font-size: 3.6vw;
+        line-height: 3.5vw;
+    }
+
+    /* Campos login */
+
+    .login-inputs {
+        font-size: 1.4vw;
+        margin-top: .5vw;
+    }
+
+    aside input[type="email"], aside input[type="password"] {
+        margin-top: 1vw;
+    }
+
+    /* Link para Cadastrar */
+
+    .login-btn .linkCadastro {
+        margin-top: .9vw;
+        font-size: 1vw;
+    }
+}
 </style>

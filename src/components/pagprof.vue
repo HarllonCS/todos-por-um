@@ -16,9 +16,7 @@
                         <!-- Menu responsivo -->
 
                         <!-- Botão do menu do usuário -->
-                        <button class="navbar-toggler conf" dtype="button" data-bs-toggle="offcanvas" data-bs-target="#abaLateral" aria-controls="abaLateral">
-                            <span class="material-icons">settings</span>
-                        </button>
+                        <a class="perfil" type="button" data-bs-toggle="offcanvas" data-bs-target="#abaLateral" aria-controls="abaLateral">Meu Perfil</a>
                         <!-- /fim Botão do menu do usuário -->
 
                         <!-- Aba lateral do usuário -->
@@ -90,7 +88,7 @@
                             <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-collapse-1" aria-expanded="false" aria-controls="accordion-collapse-1">
                                 <p class="col">FULANO</p>
                                     
-                                <img class="me-3 fs-6" src="imgs/fita.png" alt="Aluno(a) deficiente">
+                                <img class="me-3 fs-6" src="./imgs/fita.png" alt="Aluno(a) deficiente" title="Este aluno(a) possui deficiência.">
 
                                 <img src="https://picsum.photos/45" class="border border-info rounded-circle me-2">
                             </button>
@@ -222,8 +220,7 @@
                             <button class="accordion-button collapsed fw-bold d-flex" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-collapse-4" aria-expanded="false" aria-controls="accordion-collapse-4">
                                 <p class="col">REBOCO DE PAREDE</p>
 
-                                <!--<span class="material-icons fs-1 me-3">all_inclusive</span>-->
-                                <img class="me-3 fs-6" src="imgs/fita.png" alt="Aluno(a) deficiente">
+                                <img class="me-3 fs-6" src="./imgs/fita.png" alt="Aluno(a) deficiente" title="Este aluno(a) possui deficiência.">
 
                                 <img src="https://picsum.photos/45" class="border border-info rounded-circle me-2">
                             </button>
@@ -268,7 +265,7 @@
                         <h2 class="accordion-header" id="accordion-header-5">
                             <button class="accordion-button collapsed fw-bold
                             d-flex" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-collapse-5" aria-expanded="false" aria-controls="accordion-collapse-5">
-                                <p class="col">DEBILOIDE</p>
+                                <p class="col">ALBEU</p>
                                 <img src="https://picsum.photos/45" class="border border-info rounded-circle me-2">
                             </button>
                         </h2>
@@ -291,8 +288,8 @@
                                     </div>
 
                                     <div class="col text-end">
-                                        <p>Debiloide</p>
-                                        <p>Albucierre</p>
+                                        <p>Albeu</p>
+                                        <p>da Silva</p>
                                         <p>X</p>
                                         <p>X</p>
                                         <p>X</p>
@@ -315,7 +312,7 @@
 
                                 <!--<span class="material-icons fs-1 me-3">all_inclusive</span>-->
 
-                                <img class="me-3 fs-6" src="imgs/fita.png" alt="Aluno(a) deficiente">
+                                <img class="me-3 fs-6" src="./imgs/fita.png" alt="Aluno(a) deficiente" title="Este aluno(a) possui deficiência.">
 
                                 <img src="https://picsum.photos/45" class="border border-info rounded-circle me-2">
                             </button>
@@ -402,7 +399,7 @@
                     <div class="accordion-item" id="accordion-8">
                         <h2 class="accordion-header" id="accordion-header-8">
                             <button class="accordion-button collapsed fw-bold d-flex" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-collapse-8" aria-expanded="false" aria-controls="accordion-collapse-8">
-                                <p class="col">JOÃO CACHAÇA</p>
+                                <p class="col">ZÉ</p>
                                 <img src="https://picsum.photos/45" class="border border-info rounded-circle me-2">
                             </button>
                         </h2>
@@ -425,8 +422,8 @@
                                     </div>
 
                                     <div class="col text-end">
-                                        <p>João</p>
-                                        <p>Cachaça</p>
+                                        <p>Zé</p>
+                                        <p>do Bagaço</p>
                                         <p>X</p>
                                         <p>X</p>
                                         <p>X</p>
@@ -531,19 +528,16 @@
     
     /* Botão de configurações */
 
-    .container-fluid .conf {
-        background-color: #00a7aa;
+    .container-fluid .perfil {
+        color: #00a7aa;
         transition: .3s;
-        padding: 6px 8px 3px 8px;
+        text-decoration: none;
     }
 
-    .container-fluid .conf:hover {
-        background-color: #019092;
-    }
-
-    .container-fluid .conf span {
-        font-size: 1.7vw;
-        color: white;
+    .container-fluid .perfil:hover {
+        color: #019092;
+        text-decoration: underline;
+        text-decoration-thickness: 1.5px;
     }
 
 
@@ -640,7 +634,7 @@
     
     /* ESTILIZAÇÃO DO MENÚ RESPONSIVO */
     
-    @media (max-width: 991.98px) {
+    @media (max-width: 767.98px) {
     
         .cont {
             width: 95vw;
@@ -654,11 +648,10 @@
         }
 
         
-        /* Botão de configurações */
+        /* Botão de "Meu Perfil" */
 
-        .container-fluid .conf span {
-            font-size: 6.5vw;
-            color: white;
+        .container-fluid .perfil {
+            font-size: 5vw;
         }
 
 
@@ -696,16 +689,79 @@
             width: 10vw;
         }
 
-
-        /* Corpo do Acordeão */
-
         .accordion-body {
             font-size: 3.2vw;
             width: 100%;
         }
 
-        .accordion-body p {
-            border-bottom: 1px solid #00a7aa;
+    }
+
+    @media (min-width: 768px) and (max-width: 1199.98px) {
+         
+        /* Botão de "Meu Perfil" */
+
+        .container-fluid .perfil {
+            font-size: 3vw;
+        }
+
+        /* Título da sala */
+
+        .sala {
+            font-size: 4vw;
+        }
+        
+        /* Accordion */
+
+        .accordion {
+            width: 90%;
+            height: 44.4vh;
+        }
+
+        .accordion-header button {
+            font-size: 2.5vw;
+        }
+
+        .accordion-body {
+            font-size: 2vw;
+            width: 85%;
+        }
+
+        /* Botão de sair */
+
+        .offcanvas-body button span {
+            font-size: 3.5vw;
+        }
+
+        .offcanvas-body button sup {
+            font-size: 2.2vw;
+            margin-left: 3vw;
+        }
+
+        .list-group {
+            font-size: 2.5vw;
+        }
+    }
+
+    @media (min-width: 1200px) and (max-width: 1399.98px) {
+        /* Botão de "Meu Perfil" */
+
+        .container-fluid .perfil {
+            font-size: 1.6vw;
+        }
+
+        /* Botão de sair */
+
+        .offcanvas-body button span {
+            font-size: 2vw;
+        }
+
+        .offcanvas-body button sup {
+            font-size: 1.2vw;
+            margin-left: 1.5vw;
+        }
+
+        .list-group {
+            font-size: 1.8vw;
         }
     }
 </style>
