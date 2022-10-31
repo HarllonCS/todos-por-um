@@ -8,7 +8,7 @@
                 <nav class="navbar"><!-- Menu -->
                     <div class="container-fluid">
                         <div class="navbar-brand text-start"><!-- Logotipo "Todos Por Um" -->
-                            <a class="text-decoration-none text-dark" href="index.html">
+                            <a class="text-decoration-none text-dark" href="#">
                                 <h1 class="fw-bold"><span>TODOS</span><br>POR UM</h1>
                             </a>
                         </div><!-- /fim Logotipo "Todos Por Um" -->
@@ -42,7 +42,7 @@
 
                                 <ul class="list-group list-group-flush ms-2 text-start">
                                     <li class="list-group-item fw-bold mb-2">
-                                        <a class="text-decoration-none" href="index.vue">Início</a>
+                                        <a class="text-decoration-none" href="#">Início</a>
                                     </li>
 
                                     <li class="list-group-item fw-bold mb-2">
@@ -63,7 +63,6 @@
                 </nav> <!-- /fim Menu -->
             </header> <!-- /fim Cabeçalho -->
 
-            
             <main role="main">
                 <!--
                 <div class="d-grid gap-2 col-6 mx-auto">
@@ -589,7 +588,7 @@
     }
 
     .accordion {
-        width: 90%;
+        width: 75%;
         height: 45.3vh;
     }
 
