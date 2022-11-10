@@ -1,6 +1,6 @@
 <template>
 
-<p id="sala" class="fw-bold text-uppercase text-center">{{this.SalaTokenalunoPros.s}}</p>
+<label id="sala" class="fw-bold text-uppercase text-center">{{this.SalaTokenalunoPros.s}}</label>
 <label class="d-block text-center fs-4">Prof. Nome</label>
             <main role="main">
                 <div id="acordeao" class="accordion overflow-auto mx-auto border border-2 rounded" >
@@ -31,6 +31,8 @@
                                         <p>E-mail:</p>
                                         <p>Número:</p>
                                         <p>Endereço:</p>
+                                        <!-- Botão de Dicas -->
+                                        <button class="btn btn-accordion text-light fw-bold">Dicas</button>
                                     </div>
 
                                     <div class="col text-end">
@@ -45,6 +47,8 @@
                                         <p>{{alunos.email}}</p>
                                         <p>{{alunos.numero}}</p>
                                         <p>{{alunos.endereco}}</p>
+                                        <!-- Botão de Editar -->
+                                        <button class="btn btn-accordion text-light fw-bold">Editar</button>
                                     </div>
                                 </div>
                             </div>
@@ -111,6 +115,7 @@ import Axios from "@/services/restApi/restServices"
     /* Tela do(a) professor(a) */
     #sala {
         font-size: 2vw;
+        width: 100%;
     }
 
     main {
@@ -175,6 +180,15 @@ import Axios from "@/services/restApi/restServices"
 
     .accordion-body p {
         border-bottom: 1px solid #00a7aa;
+    }
+
+    .btn-accordion {
+        background-color: #00a7aa;
+        transition: .3s;
+    }
+
+    .btn-accordion:hover {
+        background-color: #00bfc2;
     }
     
     /* ESTILIZAÇÃO DO MENÚ RESPONSIVO */

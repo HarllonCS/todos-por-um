@@ -46,11 +46,9 @@
 </template>
 
 <script>
-
 export default {
     name: "Header"
 }
-
 </script>
 
 <style scoped>
@@ -81,9 +79,7 @@ export default {
         height: 100vh;
     }
     
-
     /* Formatação do Cabeçalho (logo) */
-    
     .navbar-brand h1 {
         font-size: 3vw;
         line-height: 2.8vw;
@@ -93,9 +89,7 @@ export default {
         text-decoration: none;
     }
     
-    
     /* Menu de navegação */
-    
     .nav-item {
         margin-left: 3.5vw;
         cursor: pointer;
@@ -116,14 +110,12 @@ export default {
     }
     
     /* Formatação da tela de login */
-    
     main {
         justify-content: space-between;
         margin-top: 2vw;
     }
     
     /* Textos e inputs */
-    
     aside {
         width: 30vw;
         padding: 2vw;
@@ -140,16 +132,7 @@ export default {
         color: #00a7aa;
     }
     
-    /*
-    aside p {
-        line-height: 1.3vw;
-        font-family: 'poppinslight';
-        font-size: .9vw;
-    }
-    */
-    
     /* Formatação dos campos (inputs) */
-    
     .login-inputs {
         flex-direction: column;
         font-size: .9vw;
@@ -163,7 +146,6 @@ export default {
     }
     
     /* Botões */
-    
     .login-btn {
         margin-top: 2.5vw;
         font-size: .9vw;
@@ -233,10 +215,7 @@ export default {
         font-size: 1vw;
     }
     
-    
-    
     /* ESTILIZAÇÃO DO MENÚ RESPONSIVO */
-    
     @media (max-width: 991.98px) {
     
         /* Título "Todos Por Um" */
