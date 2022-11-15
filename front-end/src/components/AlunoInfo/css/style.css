@@ -1,0 +1,68 @@
+/* Formatação do Cabeçalho (logo) */
+.navbar-brand h1 {
+    font-size: 3vw;
+    line-height: 2.8vw;
+}
+
+.navbar-brand span {
+    color: #00a7aa;
+}
+
+/* Menu de navegação */
+.nav-item {
+    margin-left: 3.5vw;
+    cursor: pointer;
+    font-size: .9vw;
+}
+
+.nav-link {
+    color: black;
+    transition: .3s;
+}
+
+.nav-link:hover, .ativo {
+    color: #00a7aa;
+}
+
+.ativo {
+    cursor: auto;
+}
+
+main {
+    margin-top: 4vw;
+}
+
+main #alu-info {
+    width: 80%;
+    /* border: 1px solid blue; */
+    padding: 1vw;
+}
+
+/* main #alu-btns {
+    border: 1px solid red;
+} */
+
+#alu-btns button {
+    width: 20vw;
+    margin: 0 auto 2vw auto;
+    font-size: 1.3vw;
+    background-color: #00a7aa;
+}
+
+#alu-btns button:hover {
+    background-color: #00b6b9;
+}
+
+main img {
+    border: 3px solid #00a7aa;
+}
+
+main label {
+    margin: .5vw 0 1vw 0;
+    font-size: 1.5vw;
+}
+
+main p {
+    font-size: .9vw;
+    line-height: 1.2vw;
+}
