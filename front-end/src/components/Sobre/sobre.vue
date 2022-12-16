@@ -1,9 +1,7 @@
 <template>
 
 <header><!-- início Cabeçalho -->
-        
         <nav class="navbar navbar-expand-lg"><!-- Menu -->
-
             <div class="logo text-uppercase"><!-- Logotipo "Todos Por Um" -->
                 <a class="text-decoration-none" href="index.html">
                     <h1 class="fw-bold"><span>Todos</span><br>Por Um</h1>
@@ -39,10 +37,8 @@
             <!-- /fim Botão "hambúrguer" do menu responsivo -->
             
             <!-- /fim Menu responsivo -->
-
         </nav> <!-- /fim Menu -->
-
-    </header> <!-- /fim Cabeçalho -->
+</header> <!-- /fim Cabeçalho -->
 
     <div class="caixa1">    <!-- Primeria imagem -->
         <div class="conteudo-titulo">   <!-- Texto na imagem -->

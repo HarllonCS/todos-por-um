@@ -7,7 +7,98 @@
     <title>Todos Por Um | Dicas</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/style.css">
+
+    <style>
+        @font-face {
+            font-family: 'poppinsmedium';
+            src: url('../../assets/fonts/poppins-medium-webfont.woff2') format('woff2'),
+                 url('../../assets/fonts/poppins-medium-webfont.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+        @font-face {
+            font-family: 'poppinsregular';
+            src: url('../../assets/fonts/poppins-regular-webfont.woff2') format('woff2'),
+                 url('../../assets/fonts/poppins-regular-webfont.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body {
+            background-color: whitesmoke;
+            font-family: 'poppinsregular';
+        }
+        
+        /* Formatação do Cabeçalho (logo) */
+        .navbar-brand h1 {
+            font-size: 3vw;
+            line-height: 2.8vw;
+        }
+        
+        .navbar-brand span {
+            color: #00a7aa;
+        }
+        
+        /* Menu de navegação */
+        .nav-item {
+            margin-left: 3.5vw;
+            cursor: pointer;
+            font-size: .9vw;
+        }
+        
+        .nav-link {
+            color: black;
+            transition: .3s;
+        }
+        
+        .nav-link:hover, .ativo {
+            color: #00a7aa;
+        }
+        
+        .ativo {
+            cursor: auto;
+        }
+        
+        main {
+            margin-top: 4vw;
+        }
+        
+        main #alu-info {
+            width: 80%;
+            /* border: 1px solid blue; */
+            padding: 1vw;
+        }
+        
+        /* main #alu-btns {
+            border: 1px solid red;
+        } */
+        
+        #alu-btns button {
+            width: 20vw;
+            margin: 0 auto 2vw auto;
+            font-size: 1.3vw;
+            background-color: #00a7aa;
+        }
+        
+        #alu-btns button:hover {
+            background-color: #00b6b9;
+        }
+        
+        main img {
+            border: 3px solid #00a7aa;
+        }
+        
+        main label {
+            margin: .5vw 0 1vw 0;
+            font-size: 1.5vw;
+        }
+        
+        main p {
+            font-size: .9vw;
+            line-height: 1.2vw;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -59,17 +150,7 @@
                 </div>
 
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Et nulla distinctio corporis, iste ullam aliquid tenetur aut dolorum adipisci culpa! Incidunt, beatae? Praesentium officia commodi excepturi, soluta ipsam deserunt quo?
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio culpa, sunt architecto reprehenderit sed perferendis quis labore? Adipisci deserunt perspiciatis illo sunt! Sit, veritatis. At atque ratione nam beatae ut!
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto distinctio corrupti hic ullam? Perferendis, magnam dolorem error cupiditate magni reiciendis quo natus similique voluptatem cum a impedit facere aut dignissimos?
-                </p>
-
-                <p>
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam ducimus nostrum earum quis quo fuga sint, numquam blanditiis culpa inventore laudantium cumque assumenda dolorum beatae ipsam doloremque harum facere autem! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint quas ut laboriosam totam modi earum iste natus perspiciatis similique enim quod voluptate, blanditiis placeat non accusamus recusandae distinctio explicabo. Amet.
-                </p>
-
-                <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi amet repellat nobis ullam labore. Blanditiis inventore dolore totam accusantium voluptatem minus vero culpa voluptatibus neque, quod repellat provident obcaecati nobis.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Et nulla distinctio corporis, iste ullam aliquid tenetur aut dolorum adipisci culpa! Incidunt, beatae? Praesentium officia commodi excepturi, soluta ipsam deserunt quo? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio culpa, sunt architecto reprehenderit sed perferendis quis labore? Adipisci deserunt perspiciatis illo sunt! Sit, veritatis. At atque ratione nam beatae ut!
                 </p>
             </div>
 

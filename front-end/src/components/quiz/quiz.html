@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todos Por Um | Quiz</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <style>
+        @font-face {
+            font-family: 'poppinsmedium';
+            src: url('../../assets/fonts/poppins-medium-webfont.woff2') format('woff2'),
+                 url('../../assets/fonts/poppins-medium-webfont.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+        
+        @font-face {
+            font-family: 'poppinsregular';
+            src: url('../../assets/fonts/poppins-regular-webfont.woff2') format('woff2'),
+                 url('../../assets/fonts/poppins-regular-webfont.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body {
+            background-color: whitesmoke;
+            font-family: 'poppinsregular';
+            height: 100vh;
+        }
+
+        .navbar-brand h1 {
+            font-size: 3vw;
+            line-height: 2.8vw;
+        }
+
+        .navbar-brand a {
+            text-decoration: none;
+        }
+
+        .navbar-brand span {
+            color: #00a7aa;
+        }
+
+        .nav-item {
+            margin-left: 3vw;
+            cursor: pointer;
+            font-size: .9vw;
+        }
+
+        .nav-link {
+            color: black;
+            transition: .3s;
+        }
+
+        .nav-link:hover, .ativo {
+            color: #00a7aa;
+        }
+
+        .ativo {
+            cursor: auto;
+        }
+
+        main {
+            width: 50vw;
+            margin-top: 3vw;
+        }
+
+        .card {
+            border: 2px solid #00a7aa;
+            margin-bottom: 5vw;
+        }
+
+        .card button.btn {
+            background-color: #00a7aa;
+            color: white;
+        }
+
+        .card button.btn:hover {
+            background-color: #029b9e;
+        }
+
+        .card-title {
+            text-align: center;
+            margin-bottom: 1vw;
+        }
+
+        .num-questao {
+            font-size: 1.4vw;
+        }
+        
+        .form-check {
+            margin-bottom: .5vw;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav class="navbar navbar-expand-lg"><!-- Menu -->
+                <div class="container-fluid">
+                    <div class="navbar-brand text-start"><!-- Logotipo "Todos Por Um" -->
+                        <a href="#">
+                            <h1 class="fw-bold text-dark"><span>TODOS</span><br>POR UM</h1>
+                        </a>
+                    </div><!-- /fim Logotipo "Todos Por Um" -->
+                
+                    <!-- Menu responsivo -->
+
+                    <!-- Botão "hambúrguer" do menu responsivo -->
+                    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navegacao" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!-- /fim Botão "hambúrguer" do menu responsivo -->
+
+                    <div id="navegacao" class="collapse navbar-collapse">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item fw-bold">
+                                <a href="index.html" class="nav-link ativo">Início</a>
+                            </li>
+
+                            <li class="nav-item fw-bold">
+                                <a href="#" class="nav-link">Serviços</a>
+                            </li>
+
+                            <li class="nav-item fw-bold">
+                                <a href="#" class="nav-link">Sobre</a>
+                            </li>
+
+                            <li class="nav-item fw-bold">
+                                <a href="#" class="nav-link">Contato</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div><!-- /fim Menu responsivo -->
+            </nav> <!-- /fim Menu -->
+        </header>
+
+        <main role="main" class="mx-auto">
+            <div class="card mx-auto">
+                <div class="card-body">
+                    <p>
+                        <span class="num-questao">1. </span>
+                        O que é o autismo?
+                    </p>
+
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="q1_alter1" name="q1">
+                        <label for="q1_alter1">É um movimento político.</label>
+                    </div>
+                    
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="q1_alter2" name="q1">
+                        <label for="q1_alter2">É uma infecção.</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="q1_alter3" name="q1">
+                        <label for="q1_alter3">É um vírus.</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="q1_alter4" name="q1">
+                        <label for="q1_alter4">É um transtorno / distúrbio.</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="q1_alter5" name="q1">
+                        <label for="q1_alter5">Nenhuma das opções acima.</label>
+                    </div>
+
+                    <button class="d-block btn mx-auto" disabled>Responder Questão</button>
+                </div>
+            </div>
+
+            <div class="card mx-auto">
+                <div class="card-body">
+                    <p>
+                        <span class="num-questao">2. </span>
+                        Quais são os sintomas do autismo?
+                    </p>
+
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="q2_alter1" name="q2">
+                        <label for="q2_alter1">
+                            Falta de contato visual, falta de comunicação, sensibilidade ao som, imitação involuntária, etc...
+                        </label>
+                    </div>
+                    
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="q2_alter2" name="q2">
+                        <label for="q2_alter2">
+                            Falta de coordenação muscular, problemas de visão, dificuldade de caminhar, tremores ou movimentos involutários, etc...
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="q2_alter3" name="q2">
+                        <label for="q2_alter3">
+                            Dificulade de concentração, 
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="q2_alter4" name="q2">
+                        <label for="q2_alter4">
+                            Dificuldade de digestão, dificuldade de caminhar, falta de coordenação muscular, etc...
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="q2_alter5" name="q2">
+                        <label for="q2_alter5">Nenhuma das opções acima.</label>
+                    </div>
+
+                    <button class="d-block btn mx-auto" disabled>Responder Questão</button>
+                </div>
+            </div>
+
+            <div class="card mx-auto">
+                <div class="card-body">
+                    <p>
+                        <span class="num-questao">3. </span>
+                        Qual a diferença entre paraplegia e paralisia?
+                    </p>
+
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="q3_alter1" name="q3">
+                        <label for="q3_alter1">
+                            Paraplegia é um problema que afeta a fala e paralsia é um problema de locomoção.
+                        </label>
+                    </div>
+                    
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="q3_alter2" name="q3">
+                        <label for="q3_alter2">
+                            Pessoas que não conseguem mexer a cabeça são paralíticas. E as que não conseguem da cintura pra baixo são paraplégicas.
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="q3_alter3" name="q3">
+                        <label for="q3_alter3">
+                            O(A) paralítico(a) não possui os movimentos de região do corpo de qualquer parte. E o(a) paraplégico(a) não pode se mover da cintura pra baixo.
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="q3_alter4" name="q3">
+                        <label for="q3_alter4">
+                            Na paralisia a pessoa não possui os movimentos dos ombros e na paraplegia não possui os movimentos do corpo inteiro.
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="q3_alter5" name="q3">
+                        <label for="q3_alter5">Nenhuma das opções acima.</label>
+                    </div>
+
+                    <button class="d-block btn mx-auto" disabled>Responder Questão</button>
+                </div>
+            </div>
+
+            <div class="card mx-auto">
+                <div class="card-body">
+                    <h2 class="card-title">Quarta Pergunta</h2>
+
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et nemo tempora autem fugiat minus quis animi obcaecati. Quia dolores officia animi, est tenetur et nam ullam suscipit maiores in. Eligendi!
+                    </p>
+
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="q4_alter1" name="q4">
+                        <label for="q4_alter1">Opção 1</label>
+                    </div>
+                    
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="q4_alter2" name="q4">
+                        <label for="q4_alter2">Opção 2</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="q4_alter3" name="q4">
+                        <label for="q4_alter3">Opção 3</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="q4_alter4" name="q4">
+                        <label for="q4_alter4">Opção 4</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="q4_alter5" name="q4">
+                        <label for="q4_alter5">Nenhuma das opções acima.</label>
+                    </div>
+
+                    <button class="d-block btn mx-auto" disabled>Responder Questão</button>
+                </div>
+            </div>
+
+            <div class="card mx-auto">
+                <div class="card-body">
+                    <h2 class="card-title">Quinta Pergunta</h2>
+
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et nemo tempora autem fugiat minus quis animi obcaecati. Quia dolores officia animi, est tenetur et nam ullam suscipit maiores in. Eligendi!
+                    </p>
+
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="q5_alter1" name="q5">
+                        <label for="q5_alter1">Opção 1</label>
+                    </div>
+                    
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="q5_alter2" name="q5">
+                        <label for="q5_alter2">Opção 2</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="q5_alter3" name="q5">
+                        <label for="q5_alter3">Opção 3</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="q5_alter4" name="q5">
+                        <label for="q5_alter4">Opção 4</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="q5_alter5" name="q5">
+                        <label for="q5_alter5">Opção 5</label>
+                    </div>
+
+                    <button class="d-block btn mx-auto" disabled>Responder Questão</button>
+                </div>
+            </div>
+
+            <div class="card mx-auto">
+                <div class="card-body">
+                    <h2 class="card-title">Sexta Pergunta</h2>
+
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et nemo tempora autem fugiat minus quis animi obcaecati. Quia dolores officia animi, est tenetur et nam ullam suscipit maiores in. Eligendi!
+                    </p>
+
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="q6_alter1" name="q6">
+                        <label for="q6_alter1">Opção 1</label>
+                    </div>
+                    
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="q6_alter2" name="q6">
+                        <label for="q6_alter2">Opção 2</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="q6_alter3" name="q6">
+                        <label for="q6_alter3">Opção 3</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="q6_alter4" name="q6">
+                        <label for="q6_alter4">Opção 4</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="q6_alter5" name="q6">
+                        <label for="q6_alter5">Opção 5</label>
+                    </div>
+
+                    <button class="d-block btn mx-auto" disabled>Responder Questão</button>
+                </div>
+            </div>
+
+            <div class="card mx-auto">
+                <div class="card-body">
+                    <h2 class="card-title">Sétima Pergunta</h2>
+
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et nemo tempora autem fugiat minus quis animi obcaecati. Quia dolores officia animi, est tenetur et nam ullam suscipit maiores in. Eligendi!
+                    </p>
+
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="q7_alter1" name="q7">
+                        <label for="q7_alter1">Opção 1</label>
+                    </div>
+                    
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="q7_alter2" name="q7">
+                        <label for="q7_alter2">Opção 2</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="q7_alter3" name="q7">
+                        <label for="q7_alter3">Opção 3</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="q7_alter4" name="q7">
+                        <label for="q7_alter4">Opção 4</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="q7_alter5" name="q7">
+                        <label for="q7_alter5">Opção 5</label>
+                    </div>
+
+                    <button class="d-block btn mx-auto" disabled>Responder Questão</button>
+                </div>
+            </div>
+
+            <div class="card mx-auto">
+                <div class="card-body">
+                    <h2 class="card-title">Oitava Pergunta</h2>
+
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et nemo tempora autem fugiat minus quis animi obcaecati. Quia dolores officia animi, est tenetur et nam ullam suscipit maiores in. Eligendi!
+                    </p>
+
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="q8_alter1" name="q8">
+                        <label for="q8_alter1">Opção 1</label>
+                    </div>
+                    
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="q8_alter2" name="q8">
+                        <label for="q8_alter2">Opção 2</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="q8_alter3" name="q8">
+                        <label for="q8_alter3">Opção 3</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="q8_alter4" name="q8">
+                        <label for="q8_alter4">Opção 4</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="q8_alter5" name="q8">
+                        <label for="q8_alter5">Opção 5</label>
+                    </div>
+
+                    <button class="d-block btn mx-auto" disabled>Responder Questão</button>
+                </div>
+            </div>
+
+            <div class="card mx-auto">
+                <div class="card-body">
+                    <h2 class="card-title">Nona Pergunta</h2>
+
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et nemo tempora autem fugiat minus quis animi obcaecati. Quia dolores officia animi, est tenetur et nam ullam suscipit maiores in. Eligendi!
+                    </p>
+
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="q9_alter1" name="q9">
+                        <label for="q9_alter1">Opção 1</label>
+                    </div>
+                    
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="q9_alter2" name="q9">
+                        <label for="q9_alter2">Opção 2</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="q9_alter3" name="q9">
+                        <label for="q9_alter3">Opção 3</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="q9_alter4" name="q9">
+                        <label for="q9_alter4">Opção 4</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="q9_alter5" name="q9">
+                        <label for="q9_alter5">Opção 5</label>
+                    </div>
+
+                    <button class="d-block btn mx-auto" disabled>Responder Questão</button>
+                </div>
+            </div>
+
+            <div class="card mx-auto">
+                <div class="card-body">
+                    <h2 class="card-title">Décima Pergunta</h2>
+
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et nemo tempora autem fugiat minus quis animi obcaecati. Quia dolores officia animi, est tenetur et nam ullam suscipit maiores in. Eligendi!
+                    </p>
+
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="q10_alter1" name="q10">
+                        <label for="q10_alter1">Opção 1</label>
+                    </div>
+                    
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="q10_alter2" name="q10">
+                        <label for="q10_alter2">Opção 2</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="q10_alter3" name="q10">
+                        <label for="q10_alter3">Opção 3</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="q10_alter4" name="q10">
+                        <label for="q10_alter4">Opção 4</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" id="q10_alter5" name="q10">
+                        <label for="q10_alter5">Opção 5</label>
+                    </div>
+
+                    <button class="d-block btn mx-auto" disabled>Responder Questão</button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+
+    <script>
+        
+    </script>
+</body>
+</html>

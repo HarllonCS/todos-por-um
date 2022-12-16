@@ -4,7 +4,6 @@
 
     <div class="body">
         <div class="cont mx-auto">
-
             <header><!-- início Cabeçalho -->
                 <nav class="navbar"><!-- Menu -->
                     <div class="container-fluid">
@@ -85,13 +84,23 @@
                     </thead> <!-- /fim do Cabeçalho da tabela -->
 
                     <tbody> <!-- Corpo da tabela -->
-                        <tr v-for="retornoBd in retornoBd" :key="retornoBd.id">
-                            <th scope="row">{{retornoBd.id}}</th>
-                            <td>{{retornoBd.nome}}</td>
-                            <td>{{retornoBd.turma}}</td>
-                            <td>{{retornoBd.turno}}</td>
+                        <tr>
+                            <th scope="row">
+                                <!-- {{retornoBd.id}} -->
+                                1
+                            </th>
                             <td>
-                                <div class="d-flex justify-content-around">
+                                <!-- {{retornoBd.nome}} -->
+                                Fulano
+                            </td>
+                            <td>3º A</td>
+                            <td>
+                                <!-- {{retornoBd.turno}} -->
+                                Manhã
+                            </td>
+                            <td>
+                                <div class="d-flex justify-content-around align-items-center">
+                                    <button class="btn dicas text-white fw-bold">DICAS</button>
                                     <span class="material-icons" title="Deletar" @click="removeAlunoBd(retornoBd.id)">delete</span>
                                     <span class="material-icons" title="Editar">edit</span>
                                 </div>
@@ -170,9 +179,7 @@ import CadastroPai from "./cadastro-modal/CadastroPai.vue";
         padding: 1vw;
     }
     
-    
     /* Formatação do Cabeçalho (logo) */
-    
     .navbar-brand h1 {
         font-size: 3vw;
         line-height: 2.8vw;
@@ -181,13 +188,20 @@ import CadastroPai from "./cadastro-modal/CadastroPai.vue";
     .navbar-brand a {
         text-decoration: none;
     }
-    
 
     /* Tabela */
-    
     table {
         font-size: 1vw;
         width: 45vw;
+    }
+
+    table .dicas {
+        background-color: #00a7aa;
+        font-size: .8vw;
+    }
+
+    table .dicas:hover {
+        background-color: #019092;
     }
 
     .table-btn {
@@ -205,10 +219,7 @@ import CadastroPai from "./cadastro-modal/CadastroPai.vue";
         background-color: #00a7aa;
     }
     
-    
     /* ESTILIZAÇÃO DO MENÚ RESPONSIVO */
-    
-    
     @media (min-width: 320px) and (max-width: 767.98px) {
         .cont {
             width: 100%;
